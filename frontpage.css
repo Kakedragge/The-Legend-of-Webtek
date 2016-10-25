@@ -1,0 +1,35 @@
+
+body {
+	width: 100%;
+}
+body {
+	height: 100%;
+	margin: 0px;
+	background-image: url("img/forest_landscape.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#background {
+	margin: 0px;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+}
+
+#box {
+	width: 500px;
+	height: 2500px;
+	background-color: black;
+}
+
+#img {
+	display: block;
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+	margin: 0px;
+}
