@@ -62,7 +62,7 @@ div {
 #content {
 	min-width: 500px;
 	width: 50%;
-	height: 70vh;
+	min-height: 70vh;
 	margin-bottom: 20px;
 }
 

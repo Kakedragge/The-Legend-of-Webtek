@@ -15,26 +15,89 @@
             <td>Contact</td>
         </tr>
     </table>
+<div id= "content">
 	
-	<h1>Photo Gallery</h1>
+	<h1 style="text-align:center">Photo Gallery</h1>
 	
-<div class = "img">
-<img id="myImg" src="img/photos/photo1.jpg" alt="Quiet water" width="300" height="200">
-<div class="desc">Quiet Water by Tom Tomsen. 24. May 1994</div>
+<div class="row">
+  <div class="column">
+    <img src="img/photos/photo1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+	<div class="desc">Quiet Water</div>
+  </div>
+  <div class="column">
+    <img src="img/photos/photo2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+	<div class="desc">Rusty track</div>
+  </div>
+  <div class="column">
+    <img src="img/photos/photo3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+	<div class="desc">White/Black Water</div>
+  </div>
+  <div class="column">
+    <img src="img/photos/photo4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+	<div class="desc">My Marvelous photo</div>
+  </div>
+  <div class="column">
+  <img src ="img/photos/photo5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  <div class="desc">An Awesome Guy</div>
 </div>
 
-<div class = "img">
-<img id="myImg2" src="img/photos/photo2.jpg" alt="Quiet water" width="300" height="200">
-<div class="desc">Quiet Water by Tom Tomsen. 24. May 1994</div>
-</div>
-
-
-<!-- The Modal -->
 <div id="myModal" class="modal">
-  <span class="close">×</span>
-  <img class="modal-content" id="img01">
-  <div id="caption"></div>
-  
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 5</div>
+      <img src="img/photos/photo1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 5</div>
+      <img src="img/photos/photo2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 5</div>
+      <img src="img/photos/photo3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 5</div>
+      <img src="img/photos/photo4.jpg" style="width:100%">
+    </div>
+	
+	 <div class="mySlides">
+      <div class="numbertext">5 / 5</div>
+      <img src="img/photos/photo5.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="img/photos/photo1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/photos/photo2" style="width:100%" onclick="currentSlide(2)" alt="Trolltunga, Norway">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/photos/photo3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/photos/photo4" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="img/photos/photo5" style="width:100%" onclick="currentSlide(5)" alt="Northern Lights">
+    </div>
+  </div>
+</div>
+
+</div>
+
 </div>
 <script src = "gallerys.js">
 </script>
