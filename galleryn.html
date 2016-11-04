@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="gallerys.css">
+<link rel="stylesheet" href="frontpage.css">
+</head>
+<body>
+<div id="logoHeader"></div>
+    <table id="navbar">
+        <tr>
+            <td id = "numerouno">Biography</td>
+            <td>References</td>
+            <td>Gallery</td>
+            <td>Events</td>
+            <td>Contact</td>
+        </tr>
+    </table>
+<div id= "content">
+	
+	<h1 style="text-align:center">Nature and Landscape Gallery</h1>
+	
+<div class="row">
+  <div class="column">
+    <img src="img/nature/nature1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+	<div class="desc">Quiet Water</div>
+  </div>
+  <div class="column">
+    <img src="img/nature/nature2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+	<div class="desc">Rusty Track</div>
+  </div>
+  <div class="column">
+    <img src="img/nature/nature3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+	<div class="desc">White/Black Water</div>
+  </div>
+  <div class="column">
+    <img src="img/nature/nature4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+	<div class="desc">My Marvelous photo</div>
+  </div>
+  <div class="column">
+  <img src ="img/nature/nature5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  <div class="desc">An Awesome Guy</div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 5</div>
+      <img src="img/nature/nature1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 5</div>
+      <img src="img/nature/nature2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 5</div>
+      <img src="img/nature/nature3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 5</div>
+      <img src="img/nature/nature4.jpg" style="width:100%">
+    </div>
+	
+	 <div class="mySlides">
+      <div class="numbertext">5 / 5</div>
+      <img src="img/nature/nature5.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="img/nature/nature1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Quiet Water by Tom Tomsen. 24. May 1994">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/nature/nature2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Rusty Track by Tomsen. 15. July 1999">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/nature/nature3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Black/White Water by Tom Tomsen. 10. March 2001">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/nature/nature4.jpg" style="width:100%" onclick="currentSlide(4)" alt="My Marvelous Photo by Tom Tomsen. 7. October 2016">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="img/nature/nature5.jpg" style="width:100%" onclick="currentSlide(5)" alt="An Awesome Guy by Tom Tomsen. 20. September 2016">
+    </div>
+  </div>
+</div>
+
+</div>
+
+</div>
+<script src = "gallerys.js">
+</script>
+
+</body>
+</html>

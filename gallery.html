@@ -2,6 +2,28 @@
 <html>
 	<head>
 		<link rel="stylesheet" href="frontpage.css">
+		<style>
+		div.img {
+			margin: 5px;
+			border: 1px solid #ccc;
+			float: left;
+			width: 180px;
+		}
+
+		div.img:hover {
+			border: 1px solid #777;
+		}
+
+		div.img img {
+			width: 100%;
+			height: auto;
+		}
+
+		div.desc {
+			padding: 0px;
+			text-align: center;
+		}
+	</style>
 	</head>
 	<body>
 	<div id="logoHeader"></div>
@@ -14,9 +36,39 @@
             <td>Contact</td>
         </tr>
     </table>
+	<div id= "content">
+	<h1 style="text-align:center"> My Galleries </h1>
 	
+	
+	<div class="img">
+	  <a target="_blank" href="galleryp.html">
+		<img src="img/photos/photo1.jpg" alt="Go to Photos" width="150" height="100">
+	  </a>
+	  <div class="desc">Photos</div>
+	</div>
+
+	<div class="img">
+	  <a target="_blank" href="galleryn.html">
+		<img src="img/nature/nature1.jpg" alt="Go to Nature and Landscape" width="150" height="100">
+	  </a>
+	  <div class="desc">Nature and Landscape</div>
+	</div>
+
+	<div class="img">
+	  <a target="_blank" href="gallerypo.html">
+		<img src="lights.jpg" alt="Northern Lights" width="150" height="100">
+	  </a>
+	  <div class="desc">Add a description of the image here</div>
+	</div>
+
+	<div class="img">
+	  <a target="_blank" href="galleryc.html">
+		<img src="mountains.jpg" alt="Mountains" width="150" height="100">
+	  </a>
+	  <div class="desc">Add a description of the image here</div>
+	</div>
 
 	
-
+	</div>
 	</body>
 </html>
