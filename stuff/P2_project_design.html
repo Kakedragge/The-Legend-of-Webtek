@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<link rel="stylesheet" type="text/css" href="style_P2.css">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+</head>
+<body>
+    <header>
+        <h1> P2 Project Design </h1>
+        <p class="names"> 
+		Frode Andre Vormdal Myhre, Hallvard Tiseth Støvneng, Sigurd Oxaas Wie og Simon Hagen Strand 
+		</p>
+		<p class="names">
+		09.10.16.
+		</p>
+    </header>
+
+    <section>
+
+        <div>
+            <h2> Administrative detaljer </h2>
+            <p>
+            Klient: Tom Tomsen
+            </p>
+			<p>
+			Navn på nettsiden: TomsenArt
+			</p>
+        </div>
+
+        <div>
+            <h2> Mål, mening og publikum </h2>
+            <p>
+            Nettsidens mål er å vise fram Toms kunst til potensielle kunder i tillegg til folk som er interessert i å se på kunsten og som eventuelt vil dra på galleri og utstillinger med mulighet for å møte Tom. Nettsiden skal tydelig vise hvilke muligheter man har som kunde, om det er å bestille kunsttrykk eller avtale om å få lagd et portrett eller annet bilde på bestilling. Publikumet består av generelt kunstinteresserte folk, gjerne med spesiell interesse for natur- og landskapsbilder da det er der hovedfokuset til Tom ligger. Noen besøkende vil kun være interessert i å få bestilt et portrett av en bekjent for å gi det bort i gave. 
+            </p>
+        </div>
+		
+		<div>
+            <h2> Navigasjonsstruktur </h2>
+            <p>
+            Navigasjonsstrukturen på siden “tomsenart” skal være slik at det er mulig å navigere seg mellom alle sidene på et trykk. Den kan defineres som en Klikk fordi alle sidene er koblet sammen med alle de andre sidene. Dette oppnås ved navigasjon igjennom sidens navbar med en dropdown meny på “Gallery”-knappen og ved å bruke logoen til å linke til forsiden. Vi mener det ikke er nødvendig å ha en knapp for forsiden i navbaren fordi forsiden ikke har noen særlig funksjon. Det er også en vanlig standard at logoer linker til forsiden. 
+            </p>
+			<p>
+			Grunnen til å ha denne typen struktur er for at brukerne skal raskt og intuitivt kunne navigere seg til den delen de vil. De fleste brukerne vil muligens komme seg til kunsten fortest mulig og dermed kan man komme seg til de forskjellige galleri-sidene gjennom rollovermenyen under “Gallery”. Man kan også gå til “Gallery” og finne fire linker med utdrag fra galleriene slik at brukerne lettere kan finne det de leter etter. Andre brukere har kanskje bestemt seg for å bestille et portrett og vil dermed finne ut hvordan dette skal gjøres raskest og enklest mulig. Vi ønsker derfor å gi brukerne friheten til å navigere seg slik de vil. 
+			</p>
+        </div>
+		
+		<div>
+            <h2> Sideoppsett og design </h2>
+            <p>
+            Det universelle designet på siden skal baseres på kunstnerens kunst. Kunstneren fokuserer på kunst basert på naturen. Det er også gitt et ønske om at nettsiden skal ha en høstlig og naturlig fargepalett. Videre diskusjon om fargene skal tas. Når det gjelder navigasjonsbaren fokuserte vi på et enkelt design med tydelig funksjon. Navigasjonsbaren viser en tydelig oversikt over innholdet på siden. Biografisiden skal gi informasjon om kunstneren for de interesserte, referansesiden er hovedsaklig for de som kanskje ønsker å bestille et portrett eller lignende og vil se kunstnerens utdannelse og prestasjoner før de gjør det valg, galleriet er for alle de som ønsker å se kunsten, hendelsessiden er for de som vil følge med på utstillinger og andre hendelser og kontaktsiden er for de som har spørsmål og de som ønsker å kjøpe eller ønsker å bestille kunst. 
+            </p>
+			
+			<figure>
+			<img src="img/Generisk side.png">
+			<figcaption> Figur 1. Utkast for generisk side </figcaption>
+			</figure>
+			
+			<h3> Mer spesifikke designvalg: </h3>
+			
+			<ul>
+			<li>
+			Fargevalg
+			<ul>
+			<li>
+			Tekst: Svart
+			</li>
+			<li>
+			Navigasjonsbar: oransje rgb(246,178,107)
+			</li>
+			<li>
+			Mørkere farge for valgt side
+			</li>
+			<li>
+			Bakgrunnsfarge: lys beige rgb(255,235,190)
+			</li>
+			<li>
+			Når et bilde fra galleriet blir valgt vil resten av siden bli mørkere for å fremheve bildet
+			</li>
+			</ul>
+			</li>
+			<li>
+			Font: Georgia
+			</li>
+			<li>
+			Innholdsdel
+			<ul>
+			<li>
+			Er plassert midt på siden med 40px margin fra navbaren
+			</li>
+			<li>
+			Bredde: 50% av vinduet, men minimum 500px
+			</li>
+			<li>
+			Høyde: Varierende på innholdet, med 20px margin fra bunnen av siden
+			</li>
+			</ul>
+			</li>
+			<li>
+			Navigasjonsbar
+			<ul>
+			<li>
+			Plassert midt på siden 40px under Logoen og 40px over innholdsdelen
+			</li>
+			<li>
+			Bredde: 50% av vinduet, men minimum 500px
+			</li>
+			<li>
+			Høyde: 40px
+			</li>
+			</ul>
+			</li>
+			<li>
+			Logo
+			<ul>
+			<li>
+			Plassering midt på siden
+			</li>
+			<li>
+			Størrelsen er foreløping ukjent da logoen ikke er laget, men er foreløping satt til 400x100px
+			</li>
+			</ul>
+			</li>
+			<li>
+			Bakgrunnsbilde:  Et bilde laget av klienten selv (klienten er imaginær så vi brukte et fri for bruk “stock”-foto). Bildet holder seg i en “fixed” posisjon
+			</li>
+			<li>
+			Linker
+			<ul>
+			<li>
+			Logoen linker til forsiden
+			</li>
+			<li>
+			Navbaren linker til alle de andre sidene. Gallery-knappen har en dropdown som linker til de fire kategoribaserte gallerisidene
+			</li>
+			</ul>
+			</li>
+			</ul>
+        </div>
+		
+		<div>
+            <h2> Innhold </h2>
+			<h3> Forsiden </h3>
+            <p>
+            Denne siden har noen forskjeller fra den generiske siden. Logoen på denne siden skal ta opp store deler av siden. Dimensjonene er ikke klare enda da logoen ikke er laget. Grunnen til at vi har logoen såpass stor på forsiden kommer av kunstnerens estetiske ønsker og at brukere skal lett se at det er en kunstside. Innholdsdelen er borte og er byttet ut med en fremvisning av enkelte bilder fra galleriene. Bildene skal gli over siden og bli byttet ut av nye etterhvert som de blir borte. Dimensjonene på bildene varier fra bildet til bilde. Ved å vise en del av kunsten på forsiden tydeliggjør dette sidens funksjon i tillegg til å vise frem kunsten så raskt som mulig.
+            </p>
+			<figure>
+			<img src="img/Forside.png">
+			<figcaption> Figur 2. Utkast for forside </figcaption>
+			</figure>
+			<h3> Hendelser </h3>
+            <p>
+            Denne siden består av hendelser som for eksempel utstillinger og andre ting klienten har lyst å legge ut. Hvert innlegg har et bilde med størrelse 150x100px, tid, dato og plasseringen til hendelsen og en tekst. Innleggets størrelse kommer an på lengden på innlegget. Innleggene skilles fra hverandre men en stiplet linje. Marginen fra linjen over og under innlegg skal være 10px. Kunstneren er med på flere konferanser i kunstmiljøet og har ofte utstillinger. Denne siden reklamerer for kunstnerens “events” noe målgruppen vil være interessert i.
+            </p>
+			<figure>
+			<img src="img/Hendelser.png">
+			<figcaption> Figur 3. Utkast for hendelsesside </figcaption>
+			</figure>
+			<h3> Biografi </h3>
+            <p>
+            Denne siden består av en biografisk tekst om klienten selv. Den inneholder også et fotografi av kunstneren som er plassert til høyre på siden med dimensjoner 250x200px. Målet med denne siden er at brukerne skal få et innblikk i kunstnerens liv. Dette er for de brukerne interessert i kunstneren selv og ikke kun kunsten.
+            </p>
+			<figure>
+			<img src="img/Biografi.png">
+			<figcaption> Figur 4. Utkast for biografiside </figcaption>
+			</figure>
+			<h3> Portfolio </h3>
+            <p>
+            Denne siden består av ulike galleri som er laget av klienten. Hvert galleri viser et bilde ifra dens galleri og gir da muligheten til å trykke på det galleriet. Målet med siden er å kunne  velge seg inn på det galleriet som brukeren er interesert i. Feks. hvis en leter etter fotografier kan en trykke seg inn på fotografi siden.
+            </p>
+			<figure>
+			<img src="img/Portfolio.png">
+			<figcaption> Figur 5. Utkast for portfolioside </figcaption>
+			</figure>
+			<h3> Natur, foto, portrett og samtidskunst </h3>
+            <p>
+            Dette er de ulike galleriene til klienten, Natur viser natur og landskapsbilder, Foto er fotografier, Samtidskunst er moderne kunst og portretter er portretter. De vill ha nær identisk layout. Der de viser de ulike bildene og navn på bildet. Målet er å lett kunne bla seg igjennom galleriene og finne et bilde en liker eller bare se hva slags kunst og slikt klienten kan lage.
+            </p>
+			<figure>
+			<img src="img/Generic Gallery.png">
+			<figcaption> Figur 6. Utkast for galleriside </figcaption>
+			</figure>
+			<h3> Referanser </h3>
+            <p>
+            Her finner besøkende en liste, i form av en beskrivelse, årstall og bilde, over hva kunstneren har oppnådd, slik som skolegang og priser. Denne siden hjelper med å gi besøkende relevant informasjon om hva kunstneren har oppnådd og dermed kan si noe om hva han er i stand til. Ved å vise at han har studert ved et spesielt univsersitet eller vunnet en pris vil besøkende få et bedre bilde av ham som kunstner og hva han kan tilby dem. Linker i forklaringene kan gå til relevante eksterne nettsider om de finnes.
+            </p>
+			<figure>
+			<img src="img/Referanser.png">
+			<figcaption> Figur 7. Utkast for referanseside </figcaption>
+			</figure>
+			<h3> Kontakt </h3>
+            <p>
+            
+            </p>
+			<figure>
+			<img src="img/Contactform.png">
+			<figcaption> Figur 8. Utkast for kontaktside </figcaption>
+			</figure>
+			<p> Kontaktskjemaet er eventuelle kunder og andre interesserte sin mulighet for å kontakte Tomsen. Her skriver kunden inn navn, e-post, telefonnummer og velger i en dropdown meny hva henvendelsen gjelder. Henvendelsen sendes direkte til Tomsens e-postadresse. Det er viktig at kundene har mulighet til å komme i direkte kontakt med Tomsen, og det er da hovedfunksjonen til dette kontaktskjemaet. Dropdownmenyen sorterer på forhånd forespørsler slik at Tomsen på forhånd vet hva henvendelsen gjelder, slik at han kan ta en vurdering på hva det er viktigst å svare på først. En av de viktigste henvendelsene vil være kjøp av bilder, og det vil inkluderes en tekst i dette skjemaet som beskriver en eventuell kjøpsprosess.</p>
+			
+        </div>
+		
+		<div>
+            <h2> Minimumskrav </h2>
+            <p>
+            Vi har lagt følgende plan for å utføre minimumskravene til implementering av Javascript applikasjoner:
+            </p>
+			<p> 
+			Frode har ansvaret for å implementere et kontaktskjema med bruk av html og Javascript. Det er særdeles viktig at kundene har en enkelt måte å komme i kontakt med Tomsen på i forbindelse med kjøp eller andre henvendelser, et behov som fylles av denne funksjonen.
+			</p>
+			<p>
+			Sigurd har ansvaret å fikse portfolie og de ulike galleriene, samt implementere image zooming i Javascrip. Det er viktig at disse bildene er lette å navigere og zoomes inn på viss det skulle være ønsket av kunden.
+			</p>
+			<p>
+			Hallvard skal implementere en dropdown-meny i sammenheng med kontaktskjemaet for å velge hvilken type henvendelse en besøkende utfører. Dette skal gjøres med HTML og JavaScript.
+			</p>
+			<p>
+				Simon har ansvaret for å implementere "slide"-animasjonen forsidens bilder. Dette gjøres i html og javascript og er for at brukerne skal forstå sidens funksjon.
+				Chatsamtalen er avsluttet
+
+			</p>
+        </div>
+		
+		<div>
+            <h2> Plan </h2>
+			<p> Vi organiserer oss etter følgende plan for å holde oversikt over hvem som skal gjøre hva og til hvilken frist. </p>
+			<h3> Organisasjonsplan </h3>
+			<p> Alle disse filene samles i en mappe så snart arbeidet med kodingen er i gang. </p>
+			<p> Liste over filer og foldere </p>
+				<ul>
+					<li>frontpage.html</li>
+					<li>references.html</li>
+					<li>gallery.html</li>
+					<li>nature.html</li>
+					<li>portrait.html</li>
+					<li>photo.html </li>
+					<li>contemporary.html</li>
+					<li>events.html</li>
+					<li>biography.html</li>
+					<li>contact.html</li>
+					<li>images/
+						<ul>
+							<li>logo.png</li>
+							<li>biography.png</li>
+							<li>eventpic1.png</li>
+						</ul>	
+					<li>nature/
+						<ul>
+							<li>pic.png</li>
+							<li>...</li>
+						</ul>
+					<li>portrait/</li>
+						<ul>
+							<li>pic.png</li>
+							<li>...</li>
+						</ul>
+					<li>photo/</li>
+						<ul>
+							<li>pic.png</li>
+							<li>...</li>
+						</ul>
+					<li>contemporary/</li>
+						<ul>
+							<li>pic.png</li>
+							<li>...</li>
+						</ul>
+					<li>Style.css</li>
+					<li>scripts/</li>
+						<ul>
+							<li>slidingImages.js</li>
+							<li>mailForm.js</li>
+							<li>imageResize.js</li>
+							<li>dropdown.js</li>
+						</ul>
+				</ul>
+			<h3> Arbeidsplan </h3>
+			<table>
+				<thead>
+					<tr> 
+						<th> Filnavn </th>
+						<th> Beskrivelse </th>
+						<th> Ansvar </th>
+						<th> Frist </th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>frontpage.html</td>
+						<td>Frontsiden</td>
+						<td>Simon</td>
+						<td>23.10</td>
+					</tr>
+					<tr>
+						<td>references.html</td>
+						<td>Referanser</td>
+						<td>Hallvard</td>
+						<td>30.10</td>
+					</tr>
+					<tr>
+						<td>gallery.html</td>
+						<td>Galleri over bilder</td>
+						<td>Sigurd</td>
+						<td>23.10</td>
+					</tr>
+					<tr>
+						<td>nature.html</td>
+						<td>Naturbilder</td>
+						<td>Sigurd</td>
+						<td>30.10</td>
+					</tr>
+					<tr>
+						<td>portrait.html</td>
+						<td>Portrettbilder</td>
+						<td>Sigurd</td>
+						<td>30.10</td>
+					</tr>
+					<tr>
+						<td>photo.html</td>
+						<td>Fotografier</td>
+						<td>Sigurd</td>
+						<td>30.10</td>
+					</tr>
+					<tr>
+						<td>contemporary.html</td>
+						<td>Nåtidskunst</td>
+						<td>Sigurd</td>
+						<td>30.10</td>
+					</tr>
+					<tr>
+						<td>events.html</td>
+						<td>Hendelser</td>
+						<td>Simon</td>
+						<td>30.10</td>
+					</tr>
+					<tr>
+						<td>biography.html</td>
+						<td>Biografi</td>
+						<td>Simon</td>
+						<td>30.10</td>
+					</tr>
+					<tr>
+						<td>contacts.html</td>
+						<td>Kontaktinfo</td>
+						<td>Frode</td>
+						<td>30.10</td>
+					</tr>
+					<tr>
+						<td>logo.png</td>
+						<td>Logo til siden</td>
+						<td>Hallvard</td>
+						<td>23.10</td>
+					</tr>
+					<tr>
+						<td>style.css</td>
+						<td>CSS styling</td>
+						<td>Alle</td>
+						<td>13.11</td>
+					</tr>
+					<tr>
+						<td>slidingImages.js</td>
+						<td>Bilder går bortover</td>
+						<td>Simon</td>
+						<td>6.11</td>
+					</tr>
+					<tr>
+						<td>mailForm.js</td>
+						<td>Sende henvendelser</td>
+						<td>Frode</td>
+						<td>6.11</td>
+					</tr>
+					<tr>
+						<td>imageSize.js</td>
+						<td>Interaktiv størrelse</td>
+						<td>Sigurd</td>
+						<td>6.11</td>
+					</tr>
+					<tr>
+						<td>dropdown.js</td>
+						<td>Dropdownmeny</td>
+						<td>Hallvard</td>
+						<td>6.11</td>
+					</tr>
+					<tr>
+						<td>Final controls</td>
+						<td>Debugging og fullføring</td>
+						<td>All</td>
+						<td>13.11</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>Planen kan endres underveis ved behov.</p>
+		</div>
+		</section>
+</body>
+</html>
