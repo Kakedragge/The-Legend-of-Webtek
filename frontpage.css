@@ -205,23 +205,3 @@ li.dropdown {
 	max-width: 35%;
 	height: auto;
 }
-
-div.img {
-			margin: 0px;
-			border: 1px solid #ccc;
-			float: left;
-		}
-
-div.img:hover {
-	border: 1px solid #777;
-}
-
-div.img img {
-	width: 100%;
-	max-height: 120;
-}
-
-div.desc {
-	text-align: center;
-	font-size: 24px;
-}
