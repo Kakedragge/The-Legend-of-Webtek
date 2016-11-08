@@ -41,7 +41,7 @@ body {
 }
 
 div {
-	background-color: saddlebrown ;
+	background-color: #ffd4ad;
 	margin: 20px;
 }
 
@@ -145,13 +145,83 @@ li.dropdown {
 	display:block;
 }
 
-.hide {
-	display:hidden;
-}
-
 #content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	min-width: 500px;
 	width: 50%;
-	min-height: 70vh;
+	min-height: 50vh;
+	height: auto;
 	margin-bottom: 20px;
+	background-color: #ffd4ad;
+}
+
+#reference-content {
+	display: flex;
+	flex-direction: column;
+	align-items: space-around;
+	min-width: 700px;
+	width: 50%;
+	min-height: 50vh;
+	height: auto;
+	margin-bottom: 20px;
+	background-color: #ffd4ad;
+}
+
+#reference {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 90%;
+	height: auto;
+	border-style: double;
+	border-width: 4px;
+	padding: 10px;
+}
+
+#reference-image {
+	height: 150px;
+	width: auto;
+}
+
+#reference-text {
+	max-width: 150px;
+}
+
+#row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 100%;
+	height: auto;
+	border-style: dotted;
+	border-width: 0px;
+}
+
+#gallery-img {
+	min-width: 25%;
+	max-width: 35%;
+	height: auto;
+}
+
+div.img {
+			margin: 0px;
+			border: 1px solid #ccc;
+			float: left;
+		}
+
+div.img:hover {
+	border: 1px solid #777;
+}
+
+div.img img {
+	width: 100%;
+	max-height: 120;
+}
+
+div.desc {
+	text-align: center;
+	font-size: 24px;
 }
