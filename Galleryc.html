@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="gallerys.css">
+<link rel="stylesheet" href="frontpage.css">
+<script type="text/javascript" src="dropdown.js" async></script>
+</head>
+<body>
+		<div id="frontpageLogo">
+			<img src="img/logo.png" id="bigLogo">
+		</div>
+
+		<ul>
+			<li><a href="#biography">Biography</a></li>
+			<li><a href="#biography">Biography</a></li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Gallery</a>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="#">Nature</a>
+					<a href="#">Photography</a>
+					<a href="#">Portraits</a>
+					<a href="#">Contemporary</a>
+				</div>
+			</li>
+			<li><a href="#biography">Biography</a></li>
+			<li><a href="#biography">Biography</a></li>
+		</ul>
+<div id= "content">
+	
+	<h1 style="text-align:center">Nature and Landscape Gallery</h1>
+	
+<div class="row">
+  <div class="column">
+    <img src="img/contart/contart1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+	<div class="desc">Pencils of the Wind</div>
+  </div>
+  <div class="column">
+    <img src="img/contart/contart2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+	<div class="desc">Something Beautiful</div>
+  </div>
+  <div class="column">
+    <img src="img/contart/contart3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+	<div class="desc">All my Thoughts</div>
+  </div>
+  <div class="column">
+    <img src="img/contart/contart4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+	<div class="desc">Rainbow happiness</div>
+  </div>
+  <div class="column">
+  <img src ="img/contart/contart5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+  <div class="desc">Red Dawn</div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 5</div>
+      <img src="img/contart/contart1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 5</div>
+      <img src="img/contart/contart2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 5</div>
+      <img src="img/contart/contart3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 5</div>
+      <img src="img/contart/contart4.jpg" style="width:100%">
+    </div>
+	
+	 <div class="mySlides">
+      <div class="numbertext">5 / 5</div>
+      <img src="img/contart/contart5.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="img/contart/contart1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Pencils of the Wind by Tom Tomsen. 1. May 1996">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/contart/contart2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Something Beautiful by Tomsen. 17. February 1994">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/contart/contart3.jpg" style="width:100%" onclick="currentSlide(3)" alt="All my Thoughts by Tom Tomsen. 9. August 20011">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/contart/contart4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Rainbow Happiness by Tom Tomsen. 6. May 2003">
+    </div>
+	<div class="column">
+      <img class="demo cursor" src="img/contart/contart5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Red Dawn by Tom Tomsen. 7. November 2007">
+    </div>
+  </div>
+</div>
+
+</div>
+
+</div>
+<script src = "gallerys.js">
+</script>
+
+</body>
+</html>
