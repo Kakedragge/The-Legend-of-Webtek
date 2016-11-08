@@ -4,42 +4,26 @@
 		<link rel="stylesheet" href="frontpage.css">
 		<script type="text/javascript" src="dropdown.js" async></script>
 		<meta charset="UTF-8">
+		<title>Frontpage</title>
 	</head>
 	<body>		
 		<div id="frontpageLogo">
 			<img src="img/logo.png" id="bigLogo">
 		</div>
-		<!--
-		<table id="navbar">
-			<tr>
-				<td id="biograpyMenu">Biography</td>
-				<td id="referencesMenu">References</td>
-				<div class="dropdown">
-					<td><button onclick="myFunction()" class="dropbtn">Gallery</button></td>
-					<div id="myDropdown" class="dropdown-content">
-						<a href="">Nature</a>
-						<a href="">Photography</a>
-						<a href="">Portraits</a>
-						<a href="">Contemporary</a>
-				</div>
-				<td id="eventsMenu">Events</td>
-				<td id="contactMenu">Contact</td>
-			</tr>
-		</table>
-	-->
-		<ul>
-			<li><a href="#biography">Biography</a></li>
-			<li><a href="#biography">Biography</a></li>
-			<li class="dropdown">
-				<a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Gallery</a>
+		<ul id="navbar">
+			<li><a href="biography.html">Biography</a></li>
+			<li><a href="references.html">References</a></li>
+			<li class="dropdown" onMouseEnter="show()" onMouseLeave="show()">
+				<a href="gallery.html" class="dropbtn">Gallery</a>
 				<div class="dropdown-content" id="myDropdown">
-					<a href="#">Nature</a>
-					<a href="#">Photography</a>
-					<a href="#">Portraits</a>
-					<a href="#">Contemporary</a>
+					<a href="galleryn.html" id="nature">Nature</a>
+					<a href="gelleryp.html" id="photography">Photography</a>
+					<a href="gallerypo.html">Portraits</a>
+					<a href="galleryc.html">Contemporary</a>
 				</div>
 			</li>
-			<li><a href="#biography">Biography</a></li>
-			<li><a href="#biography">Biography</a></li>
+			<li><a href="events.html">Events</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
 	</body>
 </html>

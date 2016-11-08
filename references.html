@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="frontpage.css">
+		<script type="text/javascript" src="dropdown.js" async></script>
+		<meta charset="UTF-8">
+		<title>References</title>
+	</head>
+	<body>		
+		<div id="frontpageLogo">
+			<img src="img/logo.png" id="bigLogo">
+		</div>
+		<ul id="navbar">
+			<li><a href="#biography">Biography</a></li>
+			<li><a href="#biography">References</a></li>
+			<li class="dropdown" onMouseEnter="show()" onMouseLeave="show()">
+				<a href="gallery.html" class="dropbtn">Gallery</a>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="galleryn.html" id="nature">Nature</a>
+					<a href="gelleryp.html" id="photography">Photography</a>
+					<a href="gallerypo.html">Portraits</a>
+					<a href="galleryc.html">Contemporary</a>
+				</div>
+			</li>
+			<li><a href="#biography">Events</a></li>
+			<li><a href="#biography">Contact</a></li>
+		</ul>
+		<div id="content"></div>
+	</body>
+</html>
