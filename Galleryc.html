@@ -3,18 +3,28 @@
 <head>
 <link rel="stylesheet" href="gallerys.css">
 <link rel="stylesheet" href="frontpage.css">
+<script type="text/javascript" src="dropdown.js" async></script>
 </head>
 <body>
-<div id="logoHeader"></div>
-    <table id="navbar">
-        <tr>
-            <td id = "numerouno">Biography</td>
-            <td>References</td>
-            <td>Gallery</td>
-            <td>Events</td>
-            <td>Contact</td>
-        </tr>
-    </table>
+		<div id="frontpageLogo">
+			<img src="img/logo.png" id="bigLogo">
+		</div>
+
+		<ul>
+			<li><a href="#biography">Biography</a></li>
+			<li><a href="#biography">Biography</a></li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Gallery</a>
+				<div class="dropdown-content" id="myDropdown">
+					<a href="#">Nature</a>
+					<a href="#">Photography</a>
+					<a href="#">Portraits</a>
+					<a href="#">Contemporary</a>
+				</div>
+			</li>
+			<li><a href="#biography">Biography</a></li>
+			<li><a href="#biography">Biography</a></li>
+		</ul>
 <div id= "content">
 	
 	<h1 style="text-align:center">Nature and Landscape Gallery</h1>
