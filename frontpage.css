@@ -65,6 +65,14 @@ div {
 	height: auto;
 	min-width: 650px;
 	margin: auto;
+	
+	-webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+#bigLogo:hover {
+	-webkit-transform: scale(1.15);
+	transform: scale(1.15);  
 }
 /*
 #navbar {
