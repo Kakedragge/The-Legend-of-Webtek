@@ -1,3 +1,6 @@
+/* Alot of this code was taken from W3 Schools */
+
+
 function openModal() {
   document.getElementById('myModal').style.display = "block";
 }
