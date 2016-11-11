@@ -10,8 +10,7 @@ body {
 
 	height: 100%;
 	margin: 0;
-	background-image: url("img/forest_landscape.jpg");
-	background-repeat: no-repeat;
+	background: url("img/forest_landscape.jpg") no-repeat;
 	background-size: cover;
 }
 
@@ -41,7 +40,6 @@ body {
 }
 
 div {
-	background-color: none;
 	margin: 20px;
 }
 
@@ -90,7 +88,7 @@ li a, .dropbtn {
 }
 
 #myDropdown {
-	margin: 0px;
+	margin: 0;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
@@ -106,7 +104,7 @@ li.dropdown {
     position: absolute;
     background-color: #43664A;
 	width: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .dropdown-content a {
