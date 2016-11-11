@@ -1,18 +1,52 @@
+<!-- 
+FILE NAME: gallery.html 
+WRITTEN BY:  Sigurd Oxaas Wie 
+WHEN:  November 2016 
+PURPOSE:  Showing an index of all the different galleries of our artist
+--> 
 <!DOCTYPE html>
 <html>
 	<head>
 		<link rel="stylesheet" href="frontpage.css">
 		<link rel="stylesheet" href="gallerys.css">
 		<script type="text/javascript" src="dropdown.js" async></script>
+<<<<<<< HEAD
+=======
+		<script type = "text/javascript" src="gallery.js"></script>
+		<style>
+			div.img {
+			margin: 0px;
+			border: 1px solid #ccc;
+			float: left;
+			}
+
+			div.img:hover {
+				border: 1px solid #777;
+			}
+
+			div.img img {
+				width: 100%;
+				max-height: 120;
+			}
+
+			div.desc {
+				text-align: center;
+				font-size: 24px;
+			}
+		
+	</style>
+	<meta charset="UTF-8">
+	<title>Galleries</title>
+>>>>>>> 0f7dfc4a7edc392478a74be0bb6090ca3f8584a3
 	</head>
-	<body>	
+	<body onload="newImage()">	
 	
 		<div id="frontpageLogo">
 			<img src="img/logo.png" id="bigLogo">
 		</div>
 		<ul id="navbar">
-			<li><a href="#biography">Biography</a></li>
-			<li><a href="#biography">References</a></li>
+			<li><a href="biography.html">Biography</a></li>
+			<li><a href="references.html">References</a></li>
 			<li class="dropdown" onMouseEnter="show()" onMouseLeave="show()">
 				<a href="gallery.html" class="dropbtn">Gallery</a>
 				<div class="dropdown-content" id="myDropdown">
@@ -22,13 +56,14 @@
 					<a href="galleryc.html">Contemporary</a>
 				</div>
 			</li>
-			<li><a href="#biography">Events</a></li>
-			<li><a href="#biography">Contact</a></li>
+			<li><a href="events.html">Events</a></li>
+			<li><a href="contact.html">Contact</a></li>
 		</ul>
 	<div id="content">
 			
 	<h1 style="text-align:center"> My Galleries </h1>
 	
+<<<<<<< HEAD
 	<div id="rad">
 		<div class="img" id="gallery-img">
 			<a target="_blank" href="galleryp.html">
@@ -59,6 +94,38 @@
 			</a>
 			<div class="desc">Portraits</div>
 		</div>
+=======
+	<div id="row">
+	<div class="img" id="gallery-img">
+	  <a target="_blank" href="galleryp.html">
+		<img src="img/photos/photo1.jpg" name="photo" alt="Go to Photos">
+	  </a>
+	  <div class="desc">Photos</div>
+	</div>
+
+	<div class="img" id="gallery-img">
+	  <a target="_blank" href="galleryn.html">
+		<img src="img/nature/nature1.jpg" name="nature" alt="Go to Nature and Landscape">
+	  </a>
+	  <div class="desc">Nature</div>
+	</div>
+	</div>
+	
+	<div id="row">
+	<div class="img" id="gallery-img">
+	  <a target="_blank" href="galleryc.html">
+		<img src="img/ContArt/contart1.jpg" name="contart" alt="Go to Contemporary Art">
+	  </a>
+	  <div class="desc">Contemporary Art</div>
+	</div>
+
+	<div class="img" id="gallery-img">
+	  <a target="_blank" href="gallerypo.html">
+		<img src="img/portraits/portrait1.jpg" name="portrait" alt="Go to Portraits">
+	  </a>
+	  <div class="desc">Portraits</div>
+	</div>
+>>>>>>> 0f7dfc4a7edc392478a74be0bb6090ca3f8584a3
 	</div>
 
 	</div>
