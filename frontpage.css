@@ -40,7 +40,7 @@ body {
 }
 
 div {
-	background-color: #ffd4ad;
+	background-color: none;
 	margin: 20px;
 }
 
@@ -60,9 +60,8 @@ div {
 
 #bigLogo{
 	display: block;
-	width: auto;
+	width: 500px;
 	height: auto;
-	min-width: 500px;
 	margin: auto;
 	
 	-webkit-transition: all 0.4s;
