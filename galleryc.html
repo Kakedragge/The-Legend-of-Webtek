@@ -1,54 +1,66 @@
+<!-- 
+FILE NAME: galleryc.html 
+WRITTEN BY:  Sigurd Oxaas Wie 
+WHEN:  November 2016 
+PURPOSE: Showing images in the category Contemporary Art
+--> 
+
+
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="gallerys.css">
-<link rel="stylesheet" href="frontpage.css">
-<script type="text/javascript" src="dropdown.js" async></script>
+		<link rel="stylesheet" href="gallerys.css">
+		<link rel="stylesheet" href="frontpage.css">
+		<script type="text/javascript" src="dropdown.js" async></script>
+		<meta charset="UTF-8">
+		<title>Contemporary Art</title>
 </head>
 <body>
 		<div id="frontpageLogo">
-			<img src="img/logo.png" id="bigLogo">
+			<a href="frontpage.html">
+				<img src="img/logo.png" id="bigLogo">
+			</a>
 		</div>
-
-		<ul>
-			<li><a href="#biography">Biography</a></li>
-			<li><a href="#biography">Biography</a></li>
-			<li class="dropdown">
-				<a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">Gallery</a>
+		<ul id="navbar">
+			<li><a href="biography.html">Biography</a></li>
+			<li><a href="references.html">References</a></li>
+			<li class="dropdown" onMouseEnter="show()" onMouseLeave="show()">
+				<a href="gallery.html" class="dropbtn">Gallery</a>
 				<div class="dropdown-content" id="myDropdown">
-					<a href="#">Nature</a>
-					<a href="#">Photography</a>
-					<a href="#">Portraits</a>
-					<a href="#">Contemporary</a>
+					<a href="galleryn.html" id=>Nature</a>
+					<a href="galleryp.html" id=>Photography</a>
+					<a href="gallerypo.html">Portraits</a>
+					<a href="galleryc.html">Contemporary</a>
 				</div>
 			</li>
-			<li><a href="#biography">Biography</a></li>
-			<li><a href="#biography">Biography</a></li>
+			<li><a href="events.html">Events</a></li>
+			<li><a href="contact.html">Contact</a></li>
 		</ul>
 <div id= "content">
-	
-	<h1 style="text-align:center">Nature and Landscape Gallery</h1>
+
+	<h1 style="text-align:center">Contemporary Art</h1>
 	
 <div class="row">
-  <div class="column">
-    <img src="img/contart/contart1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-	<div class="desc">Pencils of the Wind</div>
-  </div>
-  <div class="column">
-    <img src="img/contart/contart2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-	<div class="desc">Something Beautiful</div>
-  </div>
-  <div class="column">
-    <img src="img/contart/contart3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-	<div class="desc">All my Thoughts</div>
-  </div>
-  <div class="column">
-    <img src="img/contart/contart4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-	<div class="desc">Rainbow happiness</div>
-  </div>
-  <div class="column">
-  <img src ="img/contart/contart5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
-  <div class="desc">Red Dawn</div>
+	<div class="column">
+		<img src="img/contart/contart1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+		<div class="desc">Pencils of the Wind</div>
+	</div>
+	<div class="column">
+		<img src="img/contart/contart2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+		<div class="desc">Something Beautiful</div>
+	</div>
+	<div class="column">
+		<img src="img/contart/contart3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+		<div class="desc">All my Thoughts</div>
+	</div>
+	<div class="column">
+		<img src="img/contart/contart4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+		<div class="desc">Rainbow happiness</div>
+	</div>
+	<div class="column">
+		<img src ="img/contart/contart5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+		<div class="desc">Red Dawn</div>
+	</div>
 </div>
 
 <div id="myModal" class="modal">

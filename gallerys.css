@@ -1,3 +1,6 @@
+/* Alot of this code was taken from W3 Schools */
+
+
 body {
   font-family: Verdana, sans-serif;
   margin: 0;
@@ -8,7 +11,7 @@ body {
 }
 
 .row > .column {
-  padding: 0 8px;
+  padding: 0 0px;
 }
 
 .row:after {
@@ -19,10 +22,10 @@ body {
 
 .column {
   float: left;
-  width: 25%;
+  min-width: 25%;
+  max-width: 35%;
 }
 
-/* The Modal (background) */
 .modal {
   margin: 0;
   display: none;
@@ -37,7 +40,6 @@ body {
   background-color: black;
 }
 
-/* Modal Content */
 .modal-content {
   position: relative;
   background-color: #fefefe;
@@ -47,7 +49,6 @@ body {
   max-width: 1200px;
 }
 
-/* The Close Button */
 .close {
   color: white;
   position: absolute;
@@ -72,7 +73,6 @@ body {
   cursor: pointer
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
@@ -90,19 +90,16 @@ body {
   -webkit-user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -133,6 +130,8 @@ img {
 
 img.hover-shadow {
   transition: 0.3s
+  width: 100%;
+  height: auto;
 }
 
 .hover-shadow:hover {
@@ -140,15 +139,17 @@ img.hover-shadow {
 }
 
 div.desc {
-	margin: 0px;
+	margin: 5px;
     text-align: center;
+	width: 100%;
+	font-size: 20px;
 }
 
 div.img {
-    margin: 5px;
+	margin: auto;
     border: 1px solid #ccc;
-    float: left;
     width: 180px;
+	float: left;
 }
 
 div.img:hover {
@@ -157,5 +158,5 @@ div.img:hover {
 
 div.img img {
     width: 100%;
-    max-height: 120;
+    max-height: 120px;
 }
