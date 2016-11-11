@@ -16,7 +16,9 @@ PURPOSE: Showing images in the category nature and landscape
 </head>
 <body>
 		<div id="frontpageLogo">
-			<img src="img/logo.png" id="bigLogo">
+			<a href="frontpage.html">
+				<img src="img/logo.png" id="bigLogo">
+			</a>
 		</div>
 		<ul id="navbar">
 			<li><a href="biography.html">Biography</a></li>
@@ -24,8 +26,8 @@ PURPOSE: Showing images in the category nature and landscape
 			<li class="dropdown" onMouseEnter="show()" onMouseLeave="show()">
 				<a href="gallery.html" class="dropbtn">Gallery</a>
 				<div class="dropdown-content" id="myDropdown">
-					<a href="galleryn.html" id="nature">Nature</a>
-					<a href="gelleryp.html" id="photography">Photography</a>
+					<a href="galleryn.html">Nature</a>
+					<a href="galleryp.html">Photography</a>
 					<a href="gallerypo.html">Portraits</a>
 					<a href="galleryc.html">Contemporary</a>
 				</div>
@@ -38,25 +40,25 @@ PURPOSE: Showing images in the category nature and landscape
 	<h1 style="text-align:center">Nature and Landscape Gallery</h1>
 	
 <div class="row">
-  <div class="column">
-    <img src="img/nature/nature1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-	<div class="desc">Mountain Hills</div>
-  </div>
-  <div class="column">
-    <img src="img/nature/nature2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-	<div class="desc">Hill Mountains</div>
-  </div>
-  <div class="column">
-    <img src="img/nature/nature3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-	<div class="desc">Lighthouse by Sea</div>
-  </div>
-  <div class="column">
-    <img src="img/nature/nature4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-	<div class="desc">Relaxing Beach</div>
-  </div>
-  <div class="column">
-  <img src ="img/nature/nature5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
-  <div class="desc">A Farmers Dream</div>
+	<div class="column">
+		<img src="img/nature/nature1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+		<div class="desc">Mountain Hills</div>
+	</div>
+	<div class="column">
+		<img src="img/nature/nature2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+		<div class="desc">Hill Mountains</div>
+	</div>
+	<div class="column">
+		<img src="img/nature/nature3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+		<div class="desc">Lighthouse by Sea</div>
+	</div>
+	<div class="column">
+		<img src="img/nature/nature4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+		<div class="desc">Relaxing Beach</div>
+	</div>
+	<div class="column">
+		<img src ="img/nature/nature5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+		<div class="desc">A Farmers Dream</div>
 </div>
 
 <div id="myModal" class="modal">

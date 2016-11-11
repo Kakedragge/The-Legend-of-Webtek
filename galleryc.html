@@ -17,7 +17,9 @@ PURPOSE: Showing images in the category Contemporary Art
 </head>
 <body>
 		<div id="frontpageLogo">
-			<img src="img/logo.png" id="bigLogo">
+			<a href="frontpage.html">
+				<img src="img/logo.png" id="bigLogo">
+			</a>
 		</div>
 		<ul id="navbar">
 			<li><a href="biography.html">Biography</a></li>
@@ -25,8 +27,8 @@ PURPOSE: Showing images in the category Contemporary Art
 			<li class="dropdown" onMouseEnter="show()" onMouseLeave="show()">
 				<a href="gallery.html" class="dropbtn">Gallery</a>
 				<div class="dropdown-content" id="myDropdown">
-					<a href="galleryn.html" id="nature">Nature</a>
-					<a href="gelleryp.html" id="photography">Photography</a>
+					<a href="galleryn.html" id=>Nature</a>
+					<a href="galleryp.html" id=>Photography</a>
 					<a href="gallerypo.html">Portraits</a>
 					<a href="galleryc.html">Contemporary</a>
 				</div>
@@ -35,42 +37,30 @@ PURPOSE: Showing images in the category Contemporary Art
 			<li><a href="contact.html">Contact</a></li>
 		</ul>
 <div id= "content">
-	
-<<<<<<< HEAD
-	<h1 style="text-align:center">Contemporary</h1>
-=======
+
 	<h1 style="text-align:center">Contemporary Art</h1>
->>>>>>> 0f7dfc4a7edc392478a74be0bb6090ca3f8584a3
 	
 <div class="row">
-<div class="content">
-	<div id="rad">
-		<div class="img">
-			<img src="img/contart/contart1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-			<div class="desc">Pencils of the Wind</div>
-		</div>
-		<div class="img">
-			<img src="img/contart/contart2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-			<div class="desc">Something Beautiful</div>
-		</div>
+	<div class="column">
+		<img src="img/contart/contart1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+		<div class="desc">Pencils of the Wind</div>
 	</div>
-	<div id="rad">
-		<div class="img">
-			<img src="img/contart/contart3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-			<div class="desc">All my Thoughts</div>
-		</div>
+	<div class="column">
+		<img src="img/contart/contart2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+		<div class="desc">Something Beautiful</div>
 	</div>
-	<div id="rad">
-		<div class="img">
-			<img src="img/contart/contart4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-			<div class="desc">Rainbow happiness</div>
-		</div>
-		<div class="img">
-			<img src ="img/contart/contart5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
-			<div class="desc">Red Dawn</div>
-		</div>
+	<div class="column">
+		<img src="img/contart/contart3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+		<div class="desc">All my Thoughts</div>
 	</div>
-</div>
+	<div class="column">
+		<img src="img/contart/contart4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+		<div class="desc">Rainbow happiness</div>
+	</div>
+	<div class="column">
+		<img src ="img/contart/contart5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+		<div class="desc">Red Dawn</div>
+	</div>
 </div>
 
 <div id="myModal" class="modal">
