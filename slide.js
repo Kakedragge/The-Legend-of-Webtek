@@ -10,7 +10,7 @@ var currentPic = 0;
 
 // A function that calculates how fast the slide should go using cosine
 function updatePos(pos, endpos) {
-    var pipos = (pos/endpos)*2*Math.PI;
+    var pipos = (pos/endpos)*2.5*Math.PI;
     return (Math.cos(pipos) + 1.04)*endpos/400;
 }
 
