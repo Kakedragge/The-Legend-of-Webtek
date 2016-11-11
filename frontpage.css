@@ -1,6 +1,7 @@
 html, body {
 	min-width: 100%;
 	min-height: 100%;
+	overflow-x: hidden;
 }
 body {
 	display: flex;
@@ -184,4 +185,32 @@ li.dropdown {
 	min-width: 25%;
 	max-width: 35%;
 	height: auto;
+}
+
+div.img {
+			margin: 0px;
+			border: 1px solid #ccc;
+			float: left;
+		}
+
+div.img:hover {
+	border: 1px solid #777;
+}
+
+div.img img {
+	width: 100%;
+	max-height: 120;
+}
+
+div.desc {
+	text-align: center;
+	font-size: 24px;
+}
+
+.slidePics {
+	max-width: 50%;
+	max-height: 30%;
+	top: 60%;
+	position: absolute;
+	left: -100%;
 }
