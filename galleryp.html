@@ -12,11 +12,13 @@ PURPOSE: Showing images in the category Photo
 		<link rel="stylesheet" href="frontpage.css">
 		<script type="text/javascript" src="dropdown.js" async></script>
 		<meta charset="UTF-8">
-		<title>Photos</title>
+		<title>Photography</title>
 </head>
 <body>
 		<div id="frontpageLogo">
-			<img src="img/logo.png" id="bigLogo">
+			<a href="frontpage.html">
+				<img src="img/logo.png" id="bigLogo">
+			</a>
 		</div>
 		<ul id="navbar">
 			<li><a href="biography.html">Biography</a></li>
@@ -24,8 +26,8 @@ PURPOSE: Showing images in the category Photo
 			<li class="dropdown" onMouseEnter="show()" onMouseLeave="show()">
 				<a href="gallery.html" class="dropbtn">Gallery</a>
 				<div class="dropdown-content" id="myDropdown">
-					<a href="galleryn.html" id="nature">Nature</a>
-					<a href="gelleryp.html" id="photography">Photography</a>
+					<a href="galleryn.html">Nature</a>
+					<a href="galleryp.html">Photography</a>
 					<a href="gallerypo.html">Portraits</a>
 					<a href="galleryc.html">Contemporary</a>
 				</div>
@@ -38,25 +40,26 @@ PURPOSE: Showing images in the category Photo
 	<h1 style="text-align:center">Photo Gallery</h1>
 	
 <div class="row">
-  <div class="column">
-    <img src="img/photos/photo1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-	<div class="desc">Quiet Water</div>
-  </div>
-  <div class="column">
-    <img src="img/photos/photo2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-	<div class="desc">Rusty Track</div>
-  </div>
-  <div class="column">
-    <img src="img/photos/photo3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-	<div class="desc">White/Black Water</div>
-  </div>
-  <div class="column">
-    <img src="img/photos/photo4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-	<div class="desc">My Marvelous photo</div>
-  </div>
-  <div class="column">
-  <img src ="img/photos/photo5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
-  <div class="desc">An Awesome Guy</div>
+	<div class="column">
+		<img src="img/photos/photo1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+		<div class="desc">Quiet Water</div>
+	</div>
+	<div class="column">
+		<img src="img/photos/photo2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+		<div class="desc">Rusty Track</div>
+	</div>
+	<div class="column">
+		<img src="img/photos/photo3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+		<div class="desc">White/Black Water</div>
+	</div>
+	<div class="column">
+		<img src="img/photos/photo4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+		<div class="desc">My Marvelous photo</div>
+	</div>
+	<div class="column">
+		<img src ="img/photos/photo5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+		<div class="desc">An Awesome Guy</div>
+	</div>
 </div>
 
 <div id="myModal" class="modal">
@@ -100,16 +103,16 @@ PURPOSE: Showing images in the category Photo
       <img class="demo cursor" src="img/photos/photo1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Quiet Water by Tom Tomsen. 24. May 1994">
     </div>
     <div class="column">
-      <img class="demo cursor" src="img/photos/photo2" style="width:100%" onclick="currentSlide(2)" alt="Rusty Track by Tomsen. 15. July 1999">
+      <img class="demo cursor" src="img/photos/photo2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Rusty Track by Tomsen. 15. July 1999">
     </div>
     <div class="column">
       <img class="demo cursor" src="img/photos/photo3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Black/White Water by Tom Tomsen. 10. March 2001">
     </div>
     <div class="column">
-      <img class="demo cursor" src="img/photos/photo4" style="width:100%" onclick="currentSlide(4)" alt="My Marvelous Photo by Tom Tomsen. 7. October 2016">
+      <img class="demo cursor" src="img/photos/photo4.jpg" style="width:100%" onclick="currentSlide(4)" alt="My Marvelous Photo by Tom Tomsen. 7. October 2016">
     </div>
 	<div class="column">
-      <img class="demo cursor" src="img/photos/photo5" style="width:100%" onclick="currentSlide(5)" alt="An Awesome Guy by Tom Tomsen. 20. September 2016">
+      <img class="demo cursor" src="img/photos/photo5.jpg" style="width:100%" onclick="currentSlide(5)" alt="An Awesome Guy by Tom Tomsen. 20. September 2016">
     </div>
   </div>
 </div>
