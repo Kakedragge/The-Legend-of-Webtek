@@ -11,7 +11,7 @@ body {
 }
 
 .row > .column {
-  padding: 0 8px;
+  padding: 0 0px;
 }
 
 .row:after {
@@ -22,7 +22,8 @@ body {
 
 .column {
   float: left;
-  width: 25%;
+  min-width: 25%;
+  max-width: 35%;
 }
 
 .modal {
@@ -129,6 +130,8 @@ img {
 
 img.hover-shadow {
   transition: 0.3s
+  width: 100%;
+  height: auto;
 }
 
 .hover-shadow:hover {
@@ -136,15 +139,17 @@ img.hover-shadow {
 }
 
 div.desc {
-	margin: 0px;
+	margin: 5px;
     text-align: center;
+	width: 100%;
+	font-size: 20px;
 }
 
 div.img {
-    margin: 5px;
+	margin: auto;
     border: 1px solid #ccc;
-    float: left;
     width: 180px;
+	float: left;
 }
 
 div.img:hover {
@@ -153,5 +158,5 @@ div.img:hover {
 
 div.img img {
     width: 100%;
-    max-height: 120;
+    max-height: 120px;
 }
