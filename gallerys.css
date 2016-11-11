@@ -11,7 +11,7 @@ body {
 }
 
 .row > .column {
-  padding: 0 0px;
+  padding: 0 0;
 }
 
 .row:after {
@@ -129,7 +129,7 @@ img {
 }
 
 img.hover-shadow {
-  transition: 0.3s
+  transition: 0.3s;
   width: 100%;
   height: auto;
 }

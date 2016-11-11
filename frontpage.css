@@ -10,8 +10,7 @@ body {
 
 	height: 100%;
 	margin: 0;
-	background-image: url("img/forest_landscape.jpg");
-	background-repeat: no-repeat;
+	background: url("img/forest_landscape.jpg") no-repeat;
 	background-size: cover;
 }
 
@@ -41,7 +40,6 @@ body {
 }
 
 div {
-	background-color: none;
 	margin: 20px;
 }
 
@@ -90,7 +88,7 @@ li a, .dropbtn {
 }
 
 #myDropdown {
-	margin: 0px;
+	margin: 0;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
@@ -106,7 +104,7 @@ li.dropdown {
     position: absolute;
     background-color: #43664A;
 	width: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 .dropdown-content a {
@@ -141,7 +139,6 @@ li.dropdown {
 #reference-content {
 	display: flex;
 	flex-direction: column;
-	align-items: space-around;
 	min-width: 700px;
 	width: 50%;
 	min-height: 50vh;
@@ -150,7 +147,7 @@ li.dropdown {
 	background-color: #ffd4ad;
 }
 
-#reference {
+.reference {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -162,12 +159,12 @@ li.dropdown {
 	padding: 10px;
 }
 
-#reference-image {
+.reference-image {
 	height: 150px;
 	width: auto;
 }
 
-#reference-text {
+.reference-text {
 	max-width: 150px;
 }
 
@@ -188,10 +185,10 @@ li.dropdown {
 }
 
 div.img {
-			margin: 0px;
-			border: 1px solid #ccc;
-			float: left;
-		}
+	margin: 0;
+	border: 1px solid #ccc;
+	float: left;
+}
 
 div.img:hover {
 	border: 1px solid #777;
@@ -199,7 +196,7 @@ div.img:hover {
 
 div.img img {
 	width: 100%;
-	max-height: 120;
+	max-height: 120px;
 }
 
 div.desc {
@@ -213,4 +210,5 @@ div.desc {
 	top: 60%;
 	position: absolute;
 	left: -100%;
+	z-index: -1;
 }
