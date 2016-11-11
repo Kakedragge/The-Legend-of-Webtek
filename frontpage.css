@@ -2,6 +2,7 @@ html, body {
 	min-width: 100%;
 	min-height: 100%;
 	overflow-x: hidden;
+	font-family: Verdana, sans-serif;
 }
 body {
 	display: flex;
@@ -57,14 +58,18 @@ div {
 	margin-top: 35px;
 }
 
-#bigLogo{
+#bigLogo {
 	display: block;
 	width: 500px;
 	height: auto;
 	margin: auto;
-	
-	-webkit-transition: all 0.4s;
-    transition: all 0.4s;
+}
+
+#smallLogo {
+	display: block;
+	width: 350px;
+	height: auto;
+	margin: auto;
 }
 
 ul {
@@ -72,7 +77,7 @@ ul {
     margin: 20px;
     padding: 0;
     overflow: hidden;
-	background-color: #7D590A;
+	background-color: #4f361e;
 }
 
 li {
@@ -92,7 +97,7 @@ li a, .dropbtn {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: #992222;
+    background-color: #890000;
 }
 
 li.dropdown {
@@ -133,7 +138,27 @@ li.dropdown {
 	min-height: 50vh;
 	height: auto;
 	margin-bottom: 20px;
-	background-color: #ffd4ad;
+	background-color: #ffe6e6;
+}
+
+#text {
+	min-width: 500px;
+	width: 50%;
+	min-height: 50vh;
+	height: auto;
+	margin-bottom: 20px;
+	background-color: #ffe6e6;
+}
+
+p {
+	margin-left: 150px;
+	margin-right: 150px;
+	font-size: 16px;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 35px;
 }
 
 #reference-content {
@@ -144,7 +169,7 @@ li.dropdown {
 	min-height: 50vh;
 	height: auto;
 	margin-bottom: 20px;
-	background-color: #ffd4ad;
+	background-color: #ffe6e6;
 }
 
 .reference {
