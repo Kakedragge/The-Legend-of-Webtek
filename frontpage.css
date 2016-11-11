@@ -170,7 +170,7 @@ li.dropdown {
 	max-width: 150px;
 }
 
-#rad {
+#row {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
