@@ -17,39 +17,22 @@ PURPOSE:  Making it easier to send an email to Tom Tomsen
 		<div id="frontpageLogo">
 			<img src="img/logo.png" id="smallLogo">
 		</div>
-		<ul id="navbar">
-			<li><a href="biography.html">Biography</a></li>
-			<li><a href="references.html">References</a></li>
-			<li class="dropdown" onMouseEnter="show()" onMouseLeave="show()">
-				<a href="gallery.html" class="dropbtn">Gallery</a>
-				<div class="dropdown-content" id="myDropdown">
-					<a href="galleryn.html">Nature</a>
-					<a href="gelleryp.html">Photography</a>
-					<a href="gallerypo.html">Portraits</a>
-					<a href="galleryc.html">Contemporary</a>
-				</div>
-			</li>
-			<li><a href="events.html">Events</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
+		<script src="scripts/navbar.js"></script>
 		<div id= "content">
 		<h2>Contact Info</h2>
 		<p>If you are interested in my art, wish to purchase something, want me to make something or perhaps for something else please contact me using this form</p>
 		
 		
 		<form action="mailto:tom.tomsen@mail.com?subject=From Site" method="post" enctype="text/plain" >
-		Name:<br>
-		<input type="text" name="name"><br>
-		Comment:<br>
-		<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br><br>
-		<input type="submit" value="Send">
-		<input type="reset" value="Reset">
+			Name:<br>
+			<input type="text" name="name"><br>
+			Comment:<br>
+			<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br><br>
+			<input type="submit" value="Send">
+			<input type="reset" value="Reset">
 		</form>
 		<br>
 
-		
-	
-		
 				
 		</div>
 		
