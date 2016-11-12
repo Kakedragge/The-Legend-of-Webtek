@@ -8,78 +8,58 @@ PURPOSE:  Showing an index of all the different galleries of our artist
 <html>
 	<head>
 		<link rel="stylesheet" href="frontpage.css">
-		<link rel="stylesheet" href="gallerys.css">
 		<script type="text/javascript" src="scripts/dropdown.js" async></script>
 		<script type = "text/javascript" src="scripts/gallery.js"></script>
-		<style>
-			div.img {
-			margin: 0px;
-			border: 1px solid #ccc;
-			float: left;
-			}
 
-			div.img:hover {
-				border: 1px solid #777;
-			}
-
-			div.img img {
-				width: 100%;
-				max-height: 120;
-			}
-
-			div.desc {
-				text-align: center;
-				font-size: 24px;
-			}
-		
-	</style>
-	<meta charset="UTF-8">
-	<title>Galleries</title>
+		<meta charset="UTF-8">
+		<title>Galleries</title>
 	</head>
-	<body onload="newImage()">	
-	
+	<body onload="newImage()">
+
 		<div id="frontpageLogo">
 			<a href="frontpage.html">
 				<img src="img/logo.png" id="smallLogo">
 			</a>
 		</div>
+		<!-- This script loads the navbar -->
 		<script src="scripts/navbar.js"></script>
-	<div id="content">
-			
-	<h1 style="text-align:center"> My Galleries </h1>
-	
-	<div id="row">
-	<div class="img" id="gallery-img">
-	  <a target="_blank" href="galleryp.html">
-		<img src="img/photos/photo1.jpg" name="photo" alt="Go to Photos">
-	  </a>
-	  <div class="desc">Photos</div>
-	</div>
 
-	<div class="img" id="gallery-img">
-	  <a target="_blank" href="galleryn.html">
-		<img src="img/nature/nature1.jpg" name="nature" alt="Go to Nature and Landscape">
-	  </a>
-	  <div class="desc">Nature</div>
-	</div>
-	</div>
-	
-	<div id="row">
-	<div class="img" id="gallery-img">
-	  <a target="_blank" href="galleryc.html">
-		<img src="img/ContArt/contart1.jpg" name="contart" alt="Go to Contemporary Art">
-	  </a>
-	  <div class="desc">Contemporary Art</div>
-	</div>
+		<div id="content">
 
-	<div class="img" id="gallery-img">
-	  <a target="_blank" href="gallerypo.html">
-		<img src="img/portraits/portrait1.jpg" name="portrait" alt="Go to Portraits">
-	  </a>
-	  <div class="desc">Portraits</div>
-	</div>
-	</div>
+		<h1 style="text-align:center"> My Galleries </h1>
 
-	</div>
+		<div class="row">
+		<div class="gallery-img">
+		  <a target="_blank" href="galleryp.html">
+			<img src="img/photos/photo1.jpg" name="photo" alt="Go to Photos">
+		  </a>
+		  <div class="desc">Photos</div>
+		</div>
+
+		<div class="gallery-img" >
+		  <a target="_blank" href="galleryn.html">
+			<img src="img/nature/nature1.jpg" name="nature" alt="Go to Nature and Landscape">
+		  </a>
+		  <div class="desc">Nature</div>
+		</div>
+		</div>
+
+		<div class="row">
+		<div class="gallery-img">
+		  <a target="_blank" href="galleryc.html">
+			<img src="img/ContArt/contart1.jpg" name="contart" alt="Go to Contemporary Art">
+		  </a>
+		  <div class="desc">Contemporary Art</div>
+		</div>
+
+		<div class="gallery-img">
+		  <a target="_blank" href="gallerypo.html">
+			<img src="img/portraits/portrait1.jpg" name="portrait" alt="Go to Portraits">
+		  </a>
+		  <div class="desc">Portraits</div>
+		</div>
+		</div>
+
+		</div>
 	</body>
 </html>
