@@ -337,6 +337,10 @@ div.desc {
 	opacity: 1;
 }
 
+img {
+	width: 100%;
+}
+
 img.hover-shadow {
 	transition: 0.3s;
 	width: 100%;
