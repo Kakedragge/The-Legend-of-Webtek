@@ -52,16 +52,12 @@ div {
 
 #frontpageLogo{
 	display: block;
-	width: auto;
-	height: auto;
-	min-width: 500px;
-	margin: auto;
-	margin-top: 35px;
+	margin: 30px 0 0 0;
 }
 
 #bigLogo {
 	display: block;
-	width: 500px;
+	width: 450px;
 	height: auto;
 	margin: auto;
 }
@@ -73,10 +69,22 @@ div {
 	margin: auto;
 }
 
-#navbar {
+#biographyPic {
+	max-height: 200px;
 
+}
+
+nav {
+	margin: 40px 0 40px 0;
+	width: 50%;
+	min-width: 500px;
+}
+
+#navbar {
+	display: flex;
+	justify-content: space-around;
     list-style-type: none;
-    margin: 20px;
+    margin: 0;
     padding: 0;
     overflow: hidden;
 	background-color: #4f361e;
@@ -84,6 +92,7 @@ div {
 }
 
 li {
+
     float: left;
 }
 
@@ -140,10 +149,11 @@ li.dropdown {
 	width: 50%;
 	min-height: 50vh;
 	height: auto;
-	margin-bottom: 20px;
-	background-color: rgb(144, 120, 71);
+	margin: 0 0 20px 0;
+	background-color: #907847;
 	color: white;
 	border-radius: 25px;
+	padding-bottom: 65px;
 }
 
 
