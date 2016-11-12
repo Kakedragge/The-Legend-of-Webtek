@@ -80,6 +80,7 @@ div {
     padding: 0;
     overflow: hidden;
 	background-color: #4f361e;
+	border-radius: 10px;
 }
 
 li {
@@ -99,7 +100,7 @@ li a, .dropbtn {
 }
 
 li a:hover, .dropdown:hover .dropbtn {
-    background-color: #890000;
+	background-color: #890000;
 }
 
 li.dropdown {
@@ -140,8 +141,9 @@ li.dropdown {
 	min-height: 50vh;
 	height: auto;
 	margin-bottom: 20px;
-	background-color: #5D2C04;
+	background-color: rgb(144, 120, 71);
 	color: white;
+	border-radius: 25px;
 }
 
 
