@@ -141,7 +141,7 @@ li.dropdown {
 	min-height: 50vh;
 	height: auto;
 	margin-bottom: 20px;
-	background-color: #C1820D;
+	background-color: rgb(144, 120, 71);
 	color: white;
 	border-radius: 25px;
 }
