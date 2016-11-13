@@ -1,7 +1,14 @@
+/*
+    File Name: slide.js
+    Created by: Sigurd Oxaas Wie
+    When: November 2016
+    Purpose: To show random pictures everytime someone refresh page
+*/
 
 
 currentIndx=0;
 
+/*Place all images in array */
 MyImages1=new Array();
 
 MyImages1[0]='img/photos/photo1.jpg';
@@ -58,6 +65,7 @@ MyImages4[4]='img/portraits/portrait5.jpg';
 
 images4Preloaded = new Array(4)
 
+/*load images into the array we're gonna use */
 for (var i = 0; i < MyImages1.length ; i++){
 
 images1Preloaded[i] = new Image(120,120)
@@ -72,6 +80,7 @@ images4Preloaded[i].src=MyImages4[i]
 
 }
 
+/*Function to load new random image everytime page is refreshed */
 function newImage() {
 
 currentIndx=Math.round(Math.random()*3)
