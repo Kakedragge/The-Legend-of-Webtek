@@ -1,3 +1,5 @@
+/*General styling */
+
 html, body {
 	min-width: 100%;
 	min-height: 100%;
@@ -16,6 +18,17 @@ body {
 	background-size: cover;
 }
 
+p {
+	margin-left: 150px;
+	margin-right: 150px;
+	font-size: 16px;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 35px;
+}
+
 #background {
 	margin: 0;
 	position: fixed;
@@ -24,6 +37,22 @@ body {
 	height: 100%;
 	width: 100%;
 	min-height: 100%;
+}
+
+#content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-width: 500px;
+	width: 50%;
+	min-height: 50vh;
+	height: auto;
+	margin: 0 0 20px 0;
+	background-color: #907847;
+	color: white;
+	border-radius: 25px;
+	padding-bottom: 65px;
 }
 
 #box {
@@ -72,8 +101,11 @@ div {
 #biographyPic {
 	max-height: 200px;
 	width: auto;
-
+	box-shadow: 0px 0px 30px 5px black;
+	margin-bottom: 10px;
 }
+
+/* Navigation bar */
 
 nav {
 	margin: 40px 0 40px 0;
@@ -141,34 +173,7 @@ li.dropdown {
 	display:block;
 }
 
-#content {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	min-width: 500px;
-	width: 50%;
-	min-height: 50vh;
-	height: auto;
-	margin: 0 0 20px 0;
-	background-color: #907847;
-	color: white;
-	border-radius: 25px;
-	padding-bottom: 65px;
-}
-
-
-p {
-	margin-left: 150px;
-	margin-right: 150px;
-	font-size: 16px;
-}
-
-h1 {
-	text-align: center;
-	margin-bottom: 35px;
-}
-
+/* References */
 
 .reference {
 	display: flex;
@@ -180,6 +185,7 @@ h1 {
 	border-style: double;
 	border-width: 4px;
 	padding: 10px;
+	box-shadow: 0px 0px 30px 5px black;
 }
 
 .reference-image {
@@ -192,7 +198,49 @@ h1 {
 	width: 100px;
 }
 
-/* Css for the gallery pages */
+/* Events */
+
+#events {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	min-width: 500px;
+	width: 50%;
+	min-height: 50vh;
+	height: auto;
+	margin: 0 0 20px 0;
+	background-color: #907847;
+	color: white;
+	border-radius: 25px;
+	padding-bottom: 65px;
+}
+
+#event {
+	width: 75%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 30px;
+	border-style: solid;
+	border-color: #4f361e;
+	border-width: 5px;
+	box-shadow: 0px 0px 30px 5px white inset;
+	box-shadow: 0px 0px 30px 5px black;
+}
+
+#event-text {
+	
+}
+
+#event-image {
+	min-width: 150px;
+	width: 65%;
+	border-radius: 50%;
+	box-shadow: 0px 0px 30px 5px #000000;
+	margin-bottom: 15px;
+}
+
+/* Galllery pages */
 
 .row {
 	display: flex;
@@ -207,6 +255,7 @@ h1 {
 	max-width: 35%;
 	height: auto;
 	border: 3px solid transparent;
+	box-shadow: 0px 0px 30px 5px black;
 }
 
 
@@ -239,6 +288,7 @@ div.desc {
 	float: left;
 	min-width: 25%;
 	max-width: 35%;
+	box-shadow: 0px 0px 30px 5px black;
 }
 
 .modal {
