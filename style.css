@@ -71,6 +71,7 @@ div {
 
 #biographyPic {
 	max-height: 200px;
+	width: auto;
 
 }
 
@@ -224,6 +225,7 @@ div.desc {
 }
 
 .slidePics {
+	width: auto;
 	max-width: 50%;
 	max-height: 30%;
 	top: 60%;

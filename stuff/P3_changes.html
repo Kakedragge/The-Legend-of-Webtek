@@ -18,7 +18,6 @@
 
 <section>
 
-
     <div>
         <h2> Administrative detaljer </h2>
         <p>
@@ -28,16 +27,6 @@
             Nettsiden: <a href="">Tomsen Art</a>
         </p>
     </div>
-
-
-
-
-
-
-
-
-
-
 
     <div>
         <h2> Endringene våre </h2>
@@ -55,95 +44,109 @@
         </ul>
 
 
-        <p>frontpage.html</p>
+        <p><strong>frontpage.html:</strong></p>
 
-        <p>biography.html</p>
+        <p><strong>biography.html:</strong></p>
 
-        <p>references.html</p>
+        <p><strong>references.html:</strong></p>
 
-        <p>gallery.html</p>
+        <p><strong>gallery.html:</strong></p>
 
-        <p>events.html</p>
+        <p><strong>events.html:</strong></p>
 
-        <p>contact.html</p>
-
-
-    </div>
-
-    <div>
-        <h2> Minimumskrav </h2>
-        <p>
-            Vi har lagt følgende plan for å utføre minimumskravene til implementering av Javascript applikasjoner:
+        <p><strong>contact.html:</strong> Frode som ikke lengre tar faget hadde ansvaret for å implementere et
+            kontaktskjema med bruk av html og Javascript. Han forlot faget litt for sent til at vi fikk implenentert
+            kontaktsiden helt ferdig før fristen. Denne oppgaven ble delvis gjort i html og css istedet.
+            <strong>Ved kontakt med faglærer er det sagt at vi ikke skal bli trekt for dette.</strong>
         </p>
-        <p>
-            Frode har ansvaret for å implementere et kontaktskjema med bruk av html og Javascript. Det er særdeles viktig at kundene har en enkelt måte å komme i kontakt med Tomsen på i forbindelse med kjøp eller andre henvendelser, et behov som fylles av denne funksjonen.
-        </p>
-        <p>
+
+        <p> <strong>gallerys.js:</strong>
             Sigurd har ansvaret å fikse portfolie og de ulike galleriene, samt implementere image zooming i Javascrip. Det er viktig at disse bildene er lette å navigere og zoomes inn på viss det skulle være ønsket av kunden.
         </p>
-        <p>
+        <p> <strong>gallery.js:</strong>
+            Sigurd har ansvaret å fikse portfolie og de ulike galleriene, samt implementere image zooming i Javascrip. Det er viktig at disse bildene er lette å navigere og zoomes inn på viss det skulle være ønsket av kunden.
+        </p>
+        <p><strong>dropdown.js:</strong>
             Hallvard skal implementere en dropdown-meny i sammenheng med kontaktskjemaet for å velge hvilken type henvendelse en besøkende utfører. Dette skal gjøres med HTML og JavaScript.
         </p>
-        <p>
+        <p><strong>slide.js:</strong>
             Simon har ansvaret for å implementere "slide"-animasjonen forsidens bilder. Dette gjøres i html og javascript og er for at brukerne skal forstå sidens funksjon.
-            Chatsamtalen er avsluttet
+        </p>
 
+        <p>
+            <strong>Modularitets krav:</strong> Simon fikk dette ansvaret. Det ble løst med to filer: navbar.js og
+            logo.js. Disse filene laster inn navigasjonsbaren og logoen via document.write() funksjonen. Grunnen til at
+            vi har to av disse er fordi vi av design grunner valgte å ha logoen større på forsiden.
         </p>
 
     </div>
 
     <div>
-        <h2> Plan </h2>
-        <p> Vi organiserer oss etter følgende plan for å holde oversikt over hvem som skal gjøre hva og til hvilken frist. </p>
-        <h3> Organisasjonsplan </h3>
-        <p> Alle disse filene samles i en mappe så snart arbeidet med kodingen er i gang. </p>
-        <p> Liste over filer og foldere </p>
+
+        <p> Mappestruktur og filer </p>
         <ul>
             <li>frontpage.html</li>
             <li>references.html</li>
             <li>gallery.html</li>
-            <li>nature.html</li>
-            <li>portrait.html</li>
-            <li>photo.html </li>
-            <li>contemporary.html</li>
+            <li>galleryn.html</li>
+            <li>galleryp.html</li>
+            <li>gallerypo.html </li>
+            <li>galleryc.html</li>
             <li>events.html</li>
             <li>biography.html</li>
             <li>contact.html</li>
             <li>images/
                 <ul>
+                    <li>Nature/
+                        <ul>
+                            <li>nature1.png</li>
+                            <li>...</li>
+                        </ul>
+                    </li>
+                    <li>Portrait/
+                        <ul>
+                            <li>portrait1.png</li>
+                            <li>...</li>
+                        </ul>
+                    </li>
+                    <li>Photo/
+                        <ul>
+                            <li>photo1.png</li>
+                            <li>...</li>
+                        </ul>
+                    </li>
+                    <li>ConArt/
+                        <ul>
+                            <li>conart1.png</li>
+                            <li>...</li>
+                        </ul>
+                    </li>
+                    <li>reference/
+                        <ul>
+                            <li>...</li>
+                        </ul>
+                    </li>
+                    <li>event/
+                        <ul>
+                            <li>...</li>
+                        </ul>
+                    </li>
                     <li>logo.png</li>
-                    <li>biography.png</li>
-                    <li>eventpic1.png</li>
-                </ul>
-            <li>nature/
-                <ul>
-                    <li>pic.png</li>
                     <li>...</li>
                 </ul>
-            <li>portrait/
-            <ul>
-                <li>pic.png</li>
-                <li>...</li>
-            </ul>
-            <li>photo/</li>
-            <ul>
-                <li>pic.png</li>
-                <li>...</li>
-            </ul>
-            <li>contemporary/</li>
-            <ul>
-                <li>pic.png</li>
-                <li>...</li>
-            </ul>
+
             <li>Style.css</li>
-            <li>scripts/</li>
-            <ul>
-                <li>slidingImages.js</li>
-                <li>mailForm.js</li>
-                <li>imageResize.js</li>
-                <li>dropdown.js</li>
-            </ul>
+            <li>scripts/
+                <ul>
+                    <li>slide.js</li>
+                    <li>gallery.js</li>
+                    <li>gallerys.js</li>
+                    <li>dropdown.js</li>
+                    <li>navbar.js</li>
+                </ul>
+            </li>
         </ul>
+
         <h3> Arbeidsplan </h3>
         <table>
             <thead>
@@ -151,111 +154,116 @@
                 <th> Filnavn </th>
                 <th> Beskrivelse </th>
                 <th> Ansvar </th>
-                <th> Frist </th>
             </tr>
             </thead>
             <tbody>
             <tr>
                 <td>frontpage.html</td>
                 <td>Frontsiden</td>
+                <td>Alle</td>
+
+            </tr>
+            <tr>
+                <td>navbar.js</td>
+                <td>Genererer navbar elementet til alle sidene for å får bedre modularitet</td>
                 <td>Simon</td>
-                <td>23.10</td>
+
             </tr>
             <tr>
                 <td>references.html</td>
                 <td>Referanser</td>
                 <td>Hallvard</td>
-                <td>30.10</td>
+
             </tr>
             <tr>
                 <td>gallery.html</td>
                 <td>Galleri over bilder</td>
                 <td>Sigurd</td>
-                <td>23.10</td>
+
             </tr>
             <tr>
-                <td>nature.html</td>
+                <td>galleryn.html</td>
                 <td>Naturbilder</td>
                 <td>Sigurd</td>
-                <td>30.10</td>
+
             </tr>
             <tr>
-                <td>portrait.html</td>
+                <td>gallerypo.html</td>
                 <td>Portrettbilder</td>
                 <td>Sigurd</td>
-                <td>30.10</td>
+
             </tr>
             <tr>
-                <td>photo.html</td>
+                <td>galleryp.html</td>
                 <td>Fotografier</td>
                 <td>Sigurd</td>
-                <td>30.10</td>
+
             </tr>
             <tr>
-                <td>contemporary.html</td>
+                <td>galleryc.html</td>
                 <td>Nåtidskunst</td>
                 <td>Sigurd</td>
-                <td>30.10</td>
+
             </tr>
             <tr>
                 <td>events.html</td>
                 <td>Hendelser</td>
                 <td>Simon</td>
-                <td>30.10</td>
+
             </tr>
             <tr>
                 <td>biography.html</td>
                 <td>Biografi</td>
                 <td>Simon</td>
-                <td>30.10</td>
+
             </tr>
             <tr>
-                <td>contacts.html</td>
+                <td>contact.html</td>
                 <td>Kontaktinfo</td>
-                <td>Frode</td>
-                <td>30.10</td>
+                <td>Sigurd</td>
+
             </tr>
             <tr>
                 <td>logo.png</td>
                 <td>Logo til siden</td>
                 <td>Hallvard</td>
-                <td>23.10</td>
+
             </tr>
             <tr>
                 <td>style.css</td>
                 <td>CSS styling</td>
                 <td>Alle</td>
-                <td>13.11</td>
+
             </tr>
             <tr>
-                <td>slidingImages.js</td>
+                <td>slide.js</td>
                 <td>Bilder går bortover</td>
                 <td>Simon</td>
-                <td>6.11</td>
+
             </tr>
             <tr>
-                <td>mailForm.js</td>
-                <td>Sende henvendelser</td>
-                <td>Frode</td>
-                <td>6.11</td>
-            </tr>
-            <tr>
-                <td>imageSize.js</td>
-                <td>Interaktiv størrelse</td>
+                <td>gallery.js</td>
+                <td>Genererer tilfeldige bilder i gallery.html</td>
                 <td>Sigurd</td>
-                <td>6.11</td>
+
+            </tr>
+            <tr>
+                <td>gallerys.js</td>
+                <td>En gallerivisning man kan trykke seg igjennom</td>
+                <td>Sigurd</td>
+
             </tr>
             <tr>
                 <td>dropdown.js</td>
-                <td>Dropdownmeny</td>
+                <td>Dropdownmeny til gallery knappen</td>
                 <td>Hallvard</td>
-                <td>6.11</td>
+
             </tr>
             <tr>
-                <td>Final controls</td>
+                <td>Siste sjekk</td>
                 <td>Debugging og fullføring</td>
-                <td>All</td>
-                <td>13.11</td>
+                <td>Alle</td>
+
             </tr>
             </tbody>
         </table>
