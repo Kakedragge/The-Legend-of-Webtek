@@ -256,7 +256,6 @@ li.dropdown {
 	max-width: 35%;
 	height: auto;
 	border: 3px solid transparent;
-	box-shadow: 0 0 30px 5px black;
 }
 
 
@@ -294,7 +293,6 @@ div.desc {
 	float: left;
 	min-width: 25%;
 	max-width: 35%;
-	box-shadow: 0 0 30px 5px black;
 }
 
 .modal {
