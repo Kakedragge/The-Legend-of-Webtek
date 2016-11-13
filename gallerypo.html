@@ -2,112 +2,110 @@
 
 <!--
 FILE NAME: galleryn.html
-WRITTEN BY:  Sigurd Oxaas Wie
-WHEN:  November 2016
+WRITTEN BY: Sigurd Oxaas Wie
+WHEN: November 2016
 PURPOSE: Showing images in the category portraits
 -->
 
-
 <html lang="en">
-<head>
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="scripts/dropdown.js" async></script>
-    <meta charset="UTF-8">
-    <title>Portraits</title>
-</head>
-<body>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<script type="text/javascript" src="scripts/dropdown.js" async></script>
+		<meta charset="UTF-8">
+		<title>Portraits</title>
+	</head>
+	<body>
+		<!-- This script loads the logo -->
+		<script src="scripts/logo.js"></script>
+		<!-- This script loads the navbar -->
+		<script src="scripts/navbar.js"></script>
 
-    <!-- This script loads the logo -->
-    <script src="scripts/logo.js"></script>
-    <!-- This script loads the navbar -->
-    <script src="scripts/navbar.js"></script>
+		<div id= "content">
 
-    <div id= "content">
+			<h1 style="text-align:center">Portraits</h1>
 
-        <h1 style="text-align:center">Portraits</h1>
+			<div class="row">
+				<div class="column">
+					<img src="img/Portraits/portrait1.jpg" alt="Blondie by Tom Tomsen. 29. July 2000" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+					<div class="desc">Blondie</div>
+				</div>
+				<div class="column">
+					<img src="img/Portraits/portrait2.jpg" alt="Redhead by Tomsen. 10. November 1990" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+					<div class="desc">Redhead</div>
+				</div>
+				<div class="column">
+					<img src="img/Portraits/portrait3.jpg" alt="Sun of my Life by Tom Tomsen. 4. August 2000" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+					<div class="desc">Sun of my Life</div>
+				</div>
+				<div class="column">
+					<img src="img/Portraits/portrait4.jpg" alt="Rainbow by Tom Tomsen. 6. January 2006" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+					<div class="desc">Rainbow</div>
+				</div>
+				<div class="column">
+					<img src ="img/Portraits/portrait5.jpg" alt="Birthday Princess by Tom Tomsen. 4. February 2009" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+					<div class="desc">Birthday Princess</div>
+				</div>
 
-        <div class="row">
-          <div class="column">
-            <img src="img/Portraits/portrait1.jpg" alt="Blondie by Tom Tomsen. 29. July 2000" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-            <div class="desc">Blondie</div>
-          </div>
-          <div class="column">
-            <img src="img/Portraits/portrait2.jpg" alt="Redhead by Tomsen. 10. November 1990" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-            <div class="desc">Redhead</div>
-          </div>
-          <div class="column">
-            <img src="img/Portraits/portrait3.jpg" alt="Sun of my Life by Tom Tomsen. 4. August 2000" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-            <div class="desc">Sun of my Life</div>
-          </div>
-          <div class="column">
-            <img src="img/Portraits/portrait4.jpg" alt="Rainbow by Tom Tomsen. 6. January 2006" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-            <div class="desc">Rainbow</div>
-          </div>
-          <div class="column">
-          <img src ="img/Portraits/portrait5.jpg" alt="Birthday Princess by Tom Tomsen. 4. February 2009" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
-          <div class="desc">Birthday Princess</div>
-        </div>
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
 
-        <div id="myModal" class="modal">
-          <span class="close cursor" onclick="closeModal()">&times;</span>
-          <div class="modal-content">
+						<div class="mySlides">
+						  <div class="numbertext">1 / 5</div>
+						  <img src="img/Portraits/portrait1.jpg" alt="Blondie by Tom Tomsen. 29. July 2000" >
+						</div>
 
-            <div class="mySlides">
-              <div class="numbertext">1 / 5</div>
-              <img src="img/Portraits/portrait1.jpg" alt="Blondie by Tom Tomsen. 29. July 2000" >
-            </div>
+						<div class="mySlides">
+						  <div class="numbertext">2 / 5</div>
+						  <img src="img/Portraits/portrait2.jpg" alt="Redhead by Tomsen. 10. November 1990">
+						</div>
 
-            <div class="mySlides">
-              <div class="numbertext">2 / 5</div>
-              <img src="img/Portraits/portrait2.jpg" alt="Redhead by Tomsen. 10. November 1990">
-            </div>
+						<div class="mySlides">
+						  <div class="numbertext">3 / 5</div>
+						  <img src="img/Portraits/portrait3.jpg" alt="Sun of my Life by Tom Tomsen. 4. August 2000">
+						</div>
 
-            <div class="mySlides">
-              <div class="numbertext">3 / 5</div>
-              <img src="img/Portraits/portrait3.jpg" alt="Sun of my Life by Tom Tomsen. 4. August 2000">
-            </div>
+						<div class="mySlides">
+						  <div class="numbertext">4 / 5</div>
+						  <img src="img/Portraits/portrait4.jpg" alt="Rainbow by Tom Tomsen. 6. January 2006">
+						</div>
 
-            <div class="mySlides">
-              <div class="numbertext">4 / 5</div>
-              <img src="img/Portraits/portrait4.jpg" alt="Rainbow by Tom Tomsen. 6. January 2006">
-            </div>
+						 <div class="mySlides">
+						  <div class="numbertext">5 / 5</div>
+						  <img src="img/Portraits/portrait5.jpg" alt="Birthday Princess by Tom Tomsen. 4. February 2009">
+						</div>
 
-             <div class="mySlides">
-              <div class="numbertext">5 / 5</div>
-              <img src="img/Portraits/portrait5.jpg" alt="Birthday Princess by Tom Tomsen. 4. February 2009">
-            </div>
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-            <div class="caption-container">
-              <p id="caption"></p>
-            </div>
+						<div class="caption-container">
+							<p id="caption"></p>
+						</div>
 
 
-            <div class="column">
-              <img class="demo cursor" src="img/Portraits/portrait1.jpg"  onclick="currentSlide(1)" alt="Blondie by Tom Tomsen. 29. July 2000">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="img/Portraits/portrait2.jpg"  onclick="currentSlide(2)" alt="Redhead by Tomsen. 10. November 1990">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="img/Portraits/portrait3.jpg"  onclick="currentSlide(3)" alt="Sun of my Life by Tom Tomsen. 4. August 2000">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="img/Portraits/portrait4.jpg"  onclick="currentSlide(4)" alt="Rainbow by Tom Tomsen. 6. January 2006">
-            </div>
-            <div class="column">
-              <img class="demo cursor" src="img/Portraits/portrait5.jpg"  onclick="currentSlide(5)" alt="Birthday Princess by Tom Tomsen. 4. February 2009">
-            </div>
-          </div>
-        </div>
+						<div class="column">
+							<img class="demo cursor" src="img/Portraits/portrait1.jpg"  onclick="currentSlide(1)" alt="Blondie by Tom Tomsen. 29. July 2000">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="img/Portraits/portrait2.jpg"  onclick="currentSlide(2)" alt="Redhead by Tomsen. 10. November 1990">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="img/Portraits/portrait3.jpg"  onclick="currentSlide(3)" alt="Sun of my Life by Tom Tomsen. 4. August 2000">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="img/Portraits/portrait4.jpg"  onclick="currentSlide(4)" alt="Rainbow by Tom Tomsen. 6. January 2006">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="img/Portraits/portrait5.jpg"  onclick="currentSlide(5)" alt="Birthday Princess by Tom Tomsen. 4. February 2009">
+						</div>
+					</div>
+				</div>
 
-        </div>
+			</div>
 
-    </div>
-    <script src = "scripts/gallerys.js">
-    </script>
+		</div>
+		<script src = "scripts/gallerys.js">
+		</script>
 
-</body>
+	</body>
 </html>
