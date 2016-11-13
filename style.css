@@ -29,6 +29,10 @@ h1 {
 	margin-bottom: 35px;
 }
 
+h2 {
+	margin-bottom: 50px;
+}
+
 #background {
 	margin: 0;
 	position: fixed;
@@ -52,7 +56,7 @@ h1 {
 	background-color: #907847;
 	color: white;
 	border-radius: 25px;
-	padding-bottom: 65px;
+	padding-bottom: 25px;
 }
 
 #box {
@@ -180,7 +184,7 @@ li.dropdown {
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
-	width: 90%;
+	width: 70%;
 	height: auto;
 	border-style: double;
 	border-width: 4px;
@@ -212,7 +216,7 @@ li.dropdown {
 	background-color: #907847;
 	color: white;
 	border-radius: 25px;
-	padding-bottom: 65px;
+	padding-bottom: 25px;
 }
 
 .event {
