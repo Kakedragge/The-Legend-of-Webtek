@@ -31,7 +31,7 @@
     <div>
         <h2> Endringene våre </h2>
 
-        <p>Endringer i det generelle designet:</p>
+        <p><strong>Endringer i det generelle designet:</strong></p>
         <ul>
             <li>Navbarens farge er #4f361e og #890000 når en knapp blir svevet over.</li>
             <li>Navbarens dropdown har farge #43664A og #A3981A når en knapp blir svevet over.</li>
@@ -44,54 +44,107 @@
         </ul>
 
 
-        <p><strong>frontpage.html:</strong></p>
+        <p><strong>Endriger i frontpage.html:</strong> Logoen har fått bredde på 450px. Under navbaren er det bilder
+            som sklir over siden.
+        </p>
 
-        <p><strong>biography.html:</strong></p>
+        <p><strong>Endriger i biography.html:</strong> Bildet av klienten ar av visuelle grunner puttet midt på siden
+            rett over teksten. Bildets høyde er 200px. Teksten er blitt midtstilt.
+        </p>
 
-        <p><strong>references.html:</strong></p>
+        <p><strong>Endriger i references.html:</strong></p>
 
-        <p><strong>gallery.html:</strong></p>
+        <p><strong>Endriger i gallery.html:</strong> Overskriften er endret til Galleries. Navnene til de forskjellige
+            galleriene er lagt under eksempelbidene. Detter er gjort for å få et bedre design.
+        </p>
 
-        <p><strong>events.html:</strong></p>
+        <p><strong>Endriger i nature.html, portrait.html, photo.html, contemporary.html</strong>
+            Filnavnene er endret til galleryn.html, gallerypo.html, galleryp.html og galleryc.html.
+            Bildene i galleriet er plassert fritt nedover siden slik at hvis et bilde er ekstra høyt kan det ta plassen
+            til to andre bilder. Siden har også en gallerivisning (se Endriger i imageResize.js). Hær er det bildet
+            man trykker på forstørret til nesten fullskjerm. Øverst i høyre hjørne er det et kryss for å gå ut av
+            bildevisningsmoduset. Til høyre og venstre på bildet er det pilknapper for å bytte bilde. Under det
+            forstørrede bildet ligger galleriets bilder slik at man kan velge hvilket som helst uten å gå ut av
+            bildevisningen.
+        </p>
 
-        <p><strong>contact.html:</strong> Frode som ikke lengre tar faget hadde ansvaret for å implementere et
-            kontaktskjema med bruk av html og Javascript. Han forlot faget litt for sent til at vi fikk implenentert
-            kontaktsiden helt ferdig før fristen. Denne oppgaven ble delvis gjort i html og css istedet.
+        <p><strong>Endriger i events.html:</strong></p>
+
+        <p><strong>Endriger i contact.html:</strong>
+            Denne siden ble ikke helt ferdig da den var Frode sitt ansvar. Kun feltene med navn og text ble implementert
+            i skjemaet. En beskrivende tekst er lagt til på toppen i tillegg til mail og addresse informasjon.
+        </p>
+
+        <p> <strong>Endriger i mailForm.js:</strong>
+            Frode som ikke lengre tar faget hadde ansvaret for å implementere et kontaktskjema med bruk av html og
+            Javascript. Han forlot faget litt for sent til at vi fikk implenentert kontaktsiden helt ferdig før fristen.
+            Denne oppgaven ble delvis gjort i html og css istedet.
             <strong>Ved kontakt med faglærer er det sagt at vi ikke skal bli trekt for dette.</strong>
         </p>
 
-        <p> <strong>gallerys.js:</strong>
-            Sigurd har ansvaret å fikse portfolie og de ulike galleriene, samt implementere image zooming i Javascrip. Det er viktig at disse bildene er lette å navigere og zoomes inn på viss det skulle være ønsket av kunden.
+        <p> <strong>Endriger i imageResize.js:</strong>
+            Filnavnet er endret til gallerys.js. Istedet for at bildet som blir trykket på kun blir forstørret, kommer
+            man inn i en bildevisning hvor man kan trykke seg igjennom bildene på i galleriet.
         </p>
-        <p> <strong>gallery.js:</strong>
-            Sigurd har ansvaret å fikse portfolie og de ulike galleriene, samt implementere image zooming i Javascrip. Det er viktig at disse bildene er lette å navigere og zoomes inn på viss det skulle være ønsket av kunden.
+        <p><strong>Endriger i dropdown.js:</strong>
+            Istedet for en dropdown i kontaktskjemaet er det laget en dropdown i navbaren. Denne endringen er gjort
+            fordi contact.html og mailForm.js ikke ble laget av Frode og det ble dermed vanskelig for Hallvard å
+            lage dropdown i noe som ikke eksisterte.
         </p>
-        <p><strong>dropdown.js:</strong>
-            Hallvard skal implementere en dropdown-meny i sammenheng med kontaktskjemaet for å velge hvilken type henvendelse en besøkende utfører. Dette skal gjøres med HTML og JavaScript.
+        <p><strong>Endriger i slidingImages.js:</strong>
+            Filnavnet er endret til slide.js. Et utvalg med bilder glir over forsiden. Når alle bildene er vist starter
+            på nytt med de samme bildene. Istedenfor konstant fart over hele siden varierer farten slik at de bremser
+            ned på midten av siden.
         </p>
-        <p><strong>slide.js:</strong>
-            Simon har ansvaret for å implementere "slide"-animasjonen forsidens bilder. Dette gjøres i html og javascript og er for at brukerne skal forstå sidens funksjon.
+
+        <p> <strong>Ekstra functionalitet gallery.js:</strong>
+            Denne funksjonen ble laget i site liten for å oppfylle kravet om fire javscript applikasjoner da Frode ikke
+            fullførte sin og forlot gruppen. Den gir tilfeldige eksempel bilder til galleriene i gallery.html.
         </p>
 
         <p>
-            <strong>Modularitets krav:</strong> Simon fikk dette ansvaret. Det ble løst med to filer: navbar.js og
-            logo.js. Disse filene laster inn navigasjonsbaren og logoen via document.write() funksjonen. Grunnen til at
-            vi har to av disse er fordi vi av design grunner valgte å ha logoen større på forsiden.
+            <strong>Modularitets krav:</strong> Simon fikk ansvaret for å gjøre html-en for navbaren og logoen felles.
+            Det ble løst med to filer: navbar.js og logo.js. Disse filene laster inn navigasjonsbaren og logoen via
+            document.write() funksjonen. Grunnen til at vi har to av disse er fordi vi av design grunner valgte å ha
+            logoen større på forsiden.
         </p>
 
     </div>
 
     <div>
+        <h2>Minimumskrav</h2>
+        <p><strong>Sigurd</strong>
+            fullførte sitt javascriptkrav ved å lage en fremvisning av bildene i hvert galleri. Dette ble gjort i
+            gallerys.js og noe html i de forskjellige gallery filene.
+            Sigurd fullførte også Frode sitt javascriptkrav med filen gallery.js.
+        </p>
+        <p><strong>Simon</strong>
+            fullførte sitt javascriptkrav ved å lage slide.js som animerer bilder i frontpage.html.
+        </p>
+        <p><strong>Hallvard</strong>
+            fullførte sitt javascriptkrav ved å lage en dropdown i frontpage.html med javascriptfilen dropdown.js.
+        </p>
+        <p><strong>Frode Myhre</strong><br>
+            har ikke fullført sitt minimumskrav som var å lage en javascript funksjon som skulle sende mail til
+            klienten. Dette skulle gjøres i mailForm.js. På grunn av dette fikk vi ikke fullført denne delen 100%.
+            Sigurd lagde istedet en javascript funksjon som viser tilfeldige bilder i gallery.js.
+            Dette ble gjort for å oppfylle kravet om fire javascript applikasjoner.
+            <strong>Ved kontakt med faglærer er det sagt at vi ikke skal bli trekt for dette.</strong>
+        </p>
+    </div>
 
-        <p> Mappestruktur og filer </p>
+    <div>
+
+        <h2>Mappestruktur og filer</h2> 
+        <p>Endrede filnavn og nye filer står i <strong>fet</strong> skrift</p>
         <ul>
             <li>frontpage.html</li>
             <li>references.html</li>
             <li>gallery.html</li>
-            <li>galleryn.html</li>
-            <li>galleryp.html</li>
-            <li>gallerypo.html </li>
-            <li>galleryc.html</li>
+            <li><strong>galleryn.html</strong></li>
+            <li><strong>galleryp.html</strong></li>
+            <li><strong>gallerypo.html</strong></li>
+            <li><strong>galleryc.html</strong></li>
             <li>events.html</li>
             <li>biography.html</li>
             <li>contact.html</li>
@@ -135,19 +188,19 @@
                     <li>...</li>
                 </ul>
 
-            <li>Style.css</li>
+            <li>style.css</li>
             <li>scripts/
                 <ul>
-                    <li>slide.js</li>
-                    <li>gallery.js</li>
-                    <li>gallerys.js</li>
+                    <li><strong>slide.js</strong></li>
+                    <li><strong>gallery.js</strong></li>
+                    <li><strong>gallerys.js</strong></li>
                     <li>dropdown.js</li>
-                    <li>navbar.js</li>
+                    <li><strong>navbar.js</strong></li>
                 </ul>
             </li>
         </ul>
 
-        <h3> Arbeidsplan </h3>
+        <h3> Fullført arbeid </h3>
         <table>
             <thead>
             <tr>
