@@ -2,110 +2,111 @@
 
 <!--
 FILE NAME: galleryn.html
-WRITTEN BY:  Sigurd Oxaas Wie
-WHEN:  November 2016
+WRITTEN BY: Sigurd Oxaas Wie
+WHEN: November 2016
 PURPOSE: Showing images in the category nature and landscape
 -->
+
 <html lang="en">
-<head>
-	<link rel="stylesheet" href="style.css">
-	<script type="text/javascript" src="scripts/dropdown.js" async></script>
-	<meta charset="UTF-8">
-	<title>Nature and Landscapes</title>
-</head>
-<body>
-	<!-- This script loads the logo -->
-	<script src="scripts/logo.js"></script>
-	<!-- This script loads the navbar -->
-	<script src="scripts/navbar.js"></script>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<script type="text/javascript" src="scripts/dropdown.js" async></script>
+		<meta charset="UTF-8">
+		<title>Nature and Landscapes</title>
+	</head>
+	<body>
+		<!-- This script loads the logo -->
+		<script src="scripts/logo.js"></script>
+		<!-- This script loads the navbar -->
+		<script src="scripts/navbar.js"></script>
 
-	<div id= "content">
+		<div id= "content">
 
-		<h1 style="text-align:center">Nature and Landscape Gallery</h1>
+			<h1 style="text-align:center">Nature and Landscape Gallery</h1>
 
-	<div class="row">
-		<div class="column">
-			<img src="img/Nature/nature1.jpg" alt="Mountain Hills by Tom Tomsen. 15. April 1998" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-			<div class="desc">Mountain Hills</div>
+		<div class="row">
+			<div class="column">
+				<img src="img/Nature/nature1.jpg" alt="Mountain Hills by Tom Tomsen. 15. April 1998" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+				<div class="desc">Mountain Hills</div>
+			</div>
+			<div class="column">
+				<img src="img/Nature/nature2.jpg" alt="Hill Mountains by Tomsen. 8. July 1995" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+				<div class="desc">Hill Mountains</div>
+			</div>
+
+			<div class="column">
+				<img src="img/Nature/nature3.jpg" alt="Lighthouse by Sea by Tom Tomsen. 11. September 2001" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+				<div class="desc">Lighthouse by Sea</div>
+			</div>
+			<div class="column">
+				<img src="img/Nature/nature4.jpg" alt="Relaxing Beach by Tom Tomsen. 21. September 2004" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+				<div class="desc">Relaxing Beach</div>
+			</div>
+			<div class="column">
+				<img src ="img/Nature/nature5.jpg" alt="A Farmers Dream by Tom Tomsen. 1. June 2010" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+				<div class="desc">A Farmers Dream</div>
+			</div>
+
+			<div id="myModal" class="modal">
+				<span class="close cursor" onclick="closeModal()">&times;</span>
+				<div class="modal-content">
+
+					<div class="mySlides">
+						<div class="numbertext">1 / 5</div>
+						<img src="img/Nature/nature1.jpg" alt="Mountain Hills by Tom Tomsen. 15. April 1998">
+					</div>
+
+					<div class="mySlides">
+						<div class="numbertext">2 / 5</div>
+						<img src="img/Nature/nature2.jpg" alt="Hill Mountains by Tomsen. 8. July 1995">
+					</div>
+
+					<div class="mySlides">
+						  <div class="numbertext">3 / 5</div>
+						  <img src="img/Nature/nature3.jpg" alt="Lighthouse by Sea by Tom Tomsen. 11. September 2001">
+					</div>
+
+					<div class="mySlides">
+						  <div class="numbertext">4 / 5</div>
+						  <img src="img/Nature/nature4.jpg" alt="Relaxing Beach by Tom Tomsen. 21. September 2004">
+					</div>
+
+					 <div class="mySlides">
+						  <div class="numbertext">5 / 5</div>
+						  <img src="img/Nature/nature5.jpg" alt="A Farmers Dream by Tom Tomsen. 1. June 2010">
+					</div>
+
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					<div class="caption-container">
+						<p id="caption"></p>
+					</div>
+
+
+					<div class="column">
+						<img class="demo cursor" src="img/Nature/nature1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Mountain Hills by Tom Tomsen. 15. April 1998">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="img/Nature/nature2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Hill Mountains by Tomsen. 8. July 1995">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="img/Nature/nature3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Lighthouse by Sea by Tom Tomsen. 11. September 2001">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="img/Nature/nature4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Relaxing Beach by Tom Tomsen. 21. September 2004">
+					</div>
+					<div class="column">
+						<img class="demo cursor" src="img/Nature/nature5.jpg" style="width:100%" onclick="currentSlide(5)" alt="A Farmers Dream by Tom Tomsen. 1. June 2010">
+					</div>
+				</div>
+			</div>
+
 		</div>
-		<div class="column">
-			<img src="img/Nature/nature2.jpg" alt="Hill Mountains by Tomsen. 8. July 1995" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-			<div class="desc">Hill Mountains</div>
-		</div>
 
-		<div class="column">
-			<img src="img/Nature/nature3.jpg" alt="Lighthouse by Sea by Tom Tomsen. 11. September 2001" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-			<div class="desc">Lighthouse by Sea</div>
 		</div>
-		<div class="column">
-			<img src="img/Nature/nature4.jpg" alt="Relaxing Beach by Tom Tomsen. 21. September 2004" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-			<div class="desc">Relaxing Beach</div>
-		</div>
-		<div class="column">
-			<img src ="img/Nature/nature5.jpg" alt="A Farmers Dream by Tom Tomsen. 1. June 2010" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
-			<div class="desc">A Farmers Dream</div>
-	</div>
+		<script src = "scripts/gallerys.js">
+		</script>
 
-	<div id="myModal" class="modal">
-	  <span class="close cursor" onclick="closeModal()">&times;</span>
-	  <div class="modal-content">
-
-		<div class="mySlides">
-		  <div class="numbertext">1 / 5</div>
-		  <img src="img/Nature/nature1.jpg" alt="Mountain Hills by Tom Tomsen. 15. April 1998">
-		</div>
-
-	    <div class="mySlides">
-		  <div class="numbertext">2 / 5</div>
-		  <img src="img/Nature/nature2.jpg" alt="Hill Mountains by Tomsen. 8. July 1995">
-		</div>
-
-		<div class="mySlides">
-		  <div class="numbertext">3 / 5</div>
-		  <img src="img/Nature/nature3.jpg" alt="Lighthouse by Sea by Tom Tomsen. 11. September 2001">
-		</div>
-
-		<div class="mySlides">
-		  <div class="numbertext">4 / 5</div>
-		  <img src="img/Nature/nature4.jpg" alt="Relaxing Beach by Tom Tomsen. 21. September 2004">
-		</div>
-
-		 <div class="mySlides">
-		  <div class="numbertext">5 / 5</div>
-		  <img src="img/Nature/nature5.jpg" alt="A Farmers Dream by Tom Tomsen. 1. June 2010">
-		</div>
-
-		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-		<div class="caption-container">
-		  <p id="caption"></p>
-		</div>
-
-
-		<div class="column">
-		  <img class="demo cursor" src="img/Nature/nature1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Mountain Hills by Tom Tomsen. 15. April 1998">
-		</div>
-		<div class="column">
-		  <img class="demo cursor" src="img/Nature/nature2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Hill Mountains by Tomsen. 8. July 1995">
-		</div>
-		<div class="column">
-		  <img class="demo cursor" src="img/Nature/nature3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Lighthouse by Sea by Tom Tomsen. 11. September 2001">
-		</div>
-		<div class="column">
-		  <img class="demo cursor" src="img/Nature/nature4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Relaxing Beach by Tom Tomsen. 21. September 2004">
-		</div>
-		<div class="column">
-		  <img class="demo cursor" src="img/Nature/nature5.jpg" style="width:100%" onclick="currentSlide(5)" alt="A Farmers Dream by Tom Tomsen. 1. June 2010">
-		</div>
-	  </div>
-	</div>
-
-	</div>
-
-	</div>
-	<script src = "scripts/gallerys.js">
-	</script>
-
-</body>
+	</body>
 </html>
