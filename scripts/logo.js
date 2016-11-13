@@ -1,5 +1,8 @@
 /**
- * Created by Simon on 13.11.2016.
+ * FILE NAME: logo.js
+ * WRITTEN BY: Simon Hagen Strand
+ * WHEN: November 2016
+ * PURPOSE: Loads the logo into all the different html files except the frontpage
  */
 
 document.write('<div id="frontpageLogo"> ' +

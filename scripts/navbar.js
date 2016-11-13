@@ -1,5 +1,8 @@
 /**
- * Created by Simon on 12.11.2016.
+ * FILE NAME: navbar.js
+ * WRITTEN BY: Simon Hagen Strand
+ * WHEN: November 2016
+ * PURPOSE: Loads the navbar into all the different html files
  */
 
 
