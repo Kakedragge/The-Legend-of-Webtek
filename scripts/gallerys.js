@@ -1,10 +1,18 @@
 /* Alot of this code was taken from W3 Schools */
 
+/*
+    File Name: slide.js
+    Created by: Sigurd Oxaas Wie
+    When: November 2016
+    Purpose: Create modal images on gallery page
+*/
 
+/* Open image modal*/
 function openModal() {
   document.getElementById('myModal').style.display = "block";
 }
 
+/* Close image modal */
 function closeModal() {
   document.getElementById('myModal').style.display = "none";
 }
@@ -20,6 +28,7 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
+/* Have a slide of images */
 function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
